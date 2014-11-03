@@ -1,0 +1,15 @@
+*.swp
+.ICEauthority
+.Xauthority
+.bash_logout
+.cache/
+.compiz/
+.config/
+.gconf/
+.local/
+.mozilla/
+.viminfo
+.xsession-errors
+.xsession-errors.old
+examples.desktop
+.bash_history
