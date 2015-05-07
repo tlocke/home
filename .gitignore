@@ -14,3 +14,6 @@
 examples.desktop
 .bash_history
 maths
+.gnupg
+home
+.sudo_as_admin_successful
