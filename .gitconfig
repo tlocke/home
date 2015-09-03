@@ -3,3 +3,5 @@
 	email = tlocke@tlocke.org.uk
 [push]
 	default = simple
+[alias]
+	hist = log --graph --decorate

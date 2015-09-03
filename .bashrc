@@ -59,7 +59,7 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -117,3 +117,11 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
+PATH=$PATH:~/pypy3-2.4.0-linux64/bin:~/jython2.5.3/bin
+
+export PG8000_TEST_NAME="PG8000_TEST_9_4"
+export PG8000_TEST_9_0="{'user': 'postgres', 'password': 'pw', 'port': 5434}"
+export PG8000_TEST_9_1="{'user': 'postgres', 'password': 'pw', 'port': 5435}"
+export PG8000_TEST_9_2="{'user': 'postgres', 'password': 'pw', 'port': 5436}"
+export PG8000_TEST_9_3="{'user': 'postgres', 'password': 'pw', 'port': 5433}"
+export PG8000_TEST_9_4="{'user': 'postgres', 'password': 'pw', 'port': 5432}"
