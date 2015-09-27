@@ -71,3 +71,11 @@ pypy3-2.4.0-linux64/
 .ghc/
 .gnokiirc
 .gnome/
+.xinputrc
+.gimp-2.8/
+.gksu.lock
+.thumbnails/
+Desktop/
+Documents/
+foroko/
+

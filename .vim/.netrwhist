@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/tlocke/odfio/odfio'
 let g:netrw_dirhist_2='/home/tlocke/mread/app'
 let g:netrw_dirhist_3='/home/tlocke/pg8000/circleci'
 let g:netrw_dirhist_4='/home/tlocke/odio/odio/v1_2'
+let g:netrw_dirhist_5='/home/tlocke/prang/.tox'
