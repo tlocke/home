@@ -117,11 +117,12 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
-PATH=$PATH:~/pypy3-2.4.0-linux64/bin:~/jython2.5.3/bin
+PATH=$PATH:~/pypy3-2.4.0-linux64/bin:~/jython2.5.3/bin:~/pypy-4.0.0-linux64/bin
 
 export PG8000_TEST_NAME="PG8000_TEST_9_4"
-export PG8000_TEST_9_0="{'user': 'postgres', 'password': 'pw', 'port': 5434}"
-export PG8000_TEST_9_1="{'user': 'postgres', 'password': 'pw', 'port': 5435}"
-export PG8000_TEST_9_2="{'user': 'postgres', 'password': 'pw', 'port': 5436}"
-export PG8000_TEST_9_3="{'user': 'postgres', 'password': 'pw', 'port': 5433}"
+export PG8000_TEST_9_1="{'user': 'postgres', 'password': 'pw', 'port': 5433}"
+export PG8000_TEST_9_2="{'user': 'postgres', 'password': 'pw', 'port': 5434}"
+export PG8000_TEST_9_3="{'user': 'postgres', 'password': 'pw', 'port': 5435}"
 export PG8000_TEST_9_4="{'user': 'postgres', 'password': 'pw', 'port': 5432}"
+
+alias python=python3

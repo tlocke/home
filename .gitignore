@@ -78,4 +78,19 @@ pypy3-2.4.0-linux64/
 Desktop/
 Documents/
 foroko/
+.dbus/
+pypy-4.0.0-linux64/
+polifesto/
+nltk_data/
+jsaperstein/
+gunnebo/
+dropigee/
+ads-python-api/
+Templates/
+Pictures/
+.vnc/
+.Skype/
+.Upwork/
+.idlerc/
+.qgis2/
 

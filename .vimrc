@@ -17,3 +17,5 @@ filetype plugin indent on    " required
 set hidden
 au BufNewFile,BufRead *.adoc setf asciidoc
 autocmd BufWritePost *.py call Flake8()
+syntax on
+set ruler
