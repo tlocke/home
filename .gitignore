@@ -93,4 +93,5 @@ Pictures/
 .Upwork/
 .idlerc/
 .qgis2/
-
+venv/
+__pycache__/
