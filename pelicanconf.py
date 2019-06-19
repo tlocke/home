@@ -20,26 +20,27 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (
-    ('MtrHub', 'http://www.mtrhub.com/'),
-    (
-        'My Glimpse Inside The Ivory Tower Of Mathematics',
-        'http://maths.tlocke.org.uk/'),
-    ('Polifesto', 'http://www.polifesto.com/'),
-    (
-        'La Licorne Manifesto',
-        'http://www.polifesto.com/view_policy?'
-        'policy_key=ag9zfnBvbGlmZXN0by1ocmRyDgsSBlBvbGljeSICcDEM'),)
+LINKS = None
 
 # Social widget
-SOCIAL = (
+SOCIAL = None
+DEFAULT_PAGINATION = 10
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+MENUITEMS = (
+    ('Archive', '/archives.html'),
     ('Twitter', 'http://twitter.com/t_locke'),
-    ('GitHub', 'https://github.com/tlocke'))
-
-DEFAULT_PAGINATION = False
+    ('GitHub', 'https://github.com/tlocke')
+)
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
 OUTPUT_PATH = 'docs'
-THEME = "/home/tlocke/home/themes/notmyidea"
+# THEME = "/home/tlocke/home/themes/notmyidea"
+THEME = "/home/tlocke/home/themes/simple"
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
+DIRECT_TEMPLATES = (
+    'index', 'tags', 'categories', 'archives', 'period_archives'
+)

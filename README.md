@@ -1,9 +1,6 @@
 ## Home Site
 
-To generate site do: `pelican content --autoreload`
+To view and generate locally do:
 
-To view locally do:
-
-* `cd docs`
-* `python -m pelican.server`
+* `pelican -lr`
 * View at http://localhost:8000/

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tony Locke - I'm pleased to announce the marriage of XSL and JavaScript</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/theme/css/main.css" />
+  <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+
+
+
+
+
+</head>
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+    </header><!-- /#banner -->
+    <nav id="menu"><ul>
+        <li><a href="/">Tony Locke</a></li>
+          
+        <li><a href="/archives.html">Archive</a></li>
+        <li><a href="http://twitter.com/t_locke">Twitter</a></li>
+        <li><a href="https://github.com/tlocke">GitHub</a></li>
+    </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">I'm pleased to announce the marriage of XSL and JavaScript</h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2006-12-13T09:29:00+00:00">
+      Wed 13 December 2006
+    </time>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>To get an XSL stylesheet to output XML with JavaScript in it, do this:</p>
+<div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">xml</span> <span class="nx">version</span><span class="o">=</span><span class="s2">&quot;1.0&quot;</span> <span class="nx">encoding</span><span class="o">=</span><span class="s2">&quot;us-ascii&quot;</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nx">xsl</span>:<span class="kt">stylesheet</span> <span class="nx">version</span><span class="o">=</span><span class="s2">&quot;1.0&quot;</span>
+    <span class="nx">xmlns</span>:<span class="kt">xsl</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="o">&amp;</span><span class="nx">t</span><span class="p">;</span>
+<span class="o">&lt;</span><span class="nx">xsl</span>:<span class="kt">output</span> <span class="nx">method</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span>
+    <span class="nx">doctype</span><span class="o">-</span><span class="kr">public</span><span class="o">=</span><span class="s2">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+    <span class="nx">doctype</span><span class="o">-</span><span class="nx">system</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;</span>
+    <span class="nx">cdata</span><span class="o">-</span><span class="nx">section</span><span class="o">-</span><span class="nx">elements</span><span class="o">=</span><span class="s2">&quot;javascript-escape&quot;</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">xsl</span>:<span class="kt">template</span> <span class="nx">match</span><span class="o">=</span><span class="s2">&quot;/&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">html</span> <span class="nx">xmlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="nx">xml</span>:<span class="kt">lang</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">title</span><span class="o">&gt;</span><span class="nx">The</span> <span class="nx">Marriage</span> <span class="nx">of</span> <span class="nx">XSL</span> <span class="nx">and</span> <span class="nx">JavaScript</span><span class="o">&lt;</span><span class="err">/title&gt;</span>
+      <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+
+      <span class="cm">/*</span>
+<span class="cm">        &lt;javascript-escape&gt;</span>
+<span class="cm">          &lt;![CDATA[</span>
+<span class="cm">      */</span>
+
+<span class="kd">function</span> <span class="nx">load() {</span>
+     <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;All your bases are belong to us.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+      <span class="cm">/* ]]&gt;</span>
+<span class="cm">        &lt;/javascript-escape&gt;</span>
+<span class="cm">      */</span>
+      <span class="o">&lt;</span><span class="err">/script&gt;</span>
+    <span class="o">&lt;</span><span class="err">/head&gt;</span>
+
+  <span class="o">&lt;</span><span class="nx">body</span> <span class="nx">onload</span><span class="o">=</span><span class="s2">&quot;load()&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">Captain</span>: <span class="kt">You</span> <span class="nx">know</span> <span class="nx">what</span> <span class="nx">you</span> <span class="nx">doing</span><span class="p">.</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+  <span class="o">&lt;</span><span class="err">/body&gt;</span>
+<span class="o">&lt;</span><span class="err">/html&gt;</span>
+<span class="o">&lt;</span><span class="err">/xsl:template&gt;</span>
+<span class="o">&lt;</span><span class="err">/xsl:stylesheet&gt;</span>
+</pre></div>
+  </div><!-- /.entry-content -->
+</section>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/theme/images/icons/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+</body>
+</html>

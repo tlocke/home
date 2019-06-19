@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tony Locke - imprimatur tag</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/theme/css/main.css" />
+  <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+</head>
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+    </header><!-- /#banner -->
+    <nav id="menu"><ul>
+        <li><a href="/">Tony Locke</a></li>
+          
+        <li><a href="/archives.html">Archive</a></li>
+        <li><a href="http://twitter.com/t_locke">Twitter</a></li>
+        <li><a href="https://github.com/tlocke">GitHub</a></li>
+    </ul></nav><!-- /#menu -->
+  <section id="content">
+    <ul id="post-list">
+          <li>
+            <article>
+              <header>
+                <h2 class="entry-title"><a href="/imprimatur-021.html">Imprimatur-021</a></h2>
+              </header>
+<footer class="post-info">
+        <abbr class="published" title="2011-05-02T18:21:00+01:00">
+                Published: Mon 02 May 2011
+        </abbr>
+
+
+</footer><!-- /.post-info --><p>I've just released <a href="https://sourceforge.net/projects/imprimatur/">Imprimatur-021</a>. The main change is that the &lt;session&gt; element has been removed. There's now just one session for the whole test script. The reason is that I felt that session information didn't fit with the hierarchy of XML. At the moment there isn't a way to start a new session part way through the script. It would probably be done with a 'new-session' attribute of the &lt;request&gt; element. Let me know if that would be useful to you.  </p>
+<p>With this release I've changed from CVS to Git, simply because Git is more fashionable :-) I used <a href="http://cvs2svn.tigris.org/cvs2git.html">cvs2git</a> and it worked really well.<br>
+</request></session></p>            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-019.html" rel="bookmark" title="Permalink to Imprimatur-019">Imprimatur-019</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2010-11-24T22:55:00+00:00"> Wed 24 November 2010 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Patrice pointed out that the HTTP HEAD method in Imprimatur doesn't work, so I've fixed it in <a href="http://sourceforge.net/projects/imprimatur/">Imprimatur-019</a>. Let me know if you have any problems with it.</p>
+                <a class="readmore" href="/imprimatur-019.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-applicationxml-dtd.html" rel="bookmark" title="Permalink to Imprimatur: application/xml-dtd">Imprimatur: application/xml-dtd</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2010-11-14T21:17:00+00:00"> Sun 14 November 2010 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Thanks to Patrice for pointing out that the URL of the Imprimatur DTD <code>http://imprimatur.sourceforge.net/imprimatur-008.dtd</code> is returning the wrong content type. IIRC it used to be <code>text/plain</code>, but then it must have somehow changed to <code>text/html</code>, I've now changed it to <code>application/xml-dtd</code> which …</p>
+                <a class="readmore" href="/imprimatur-applicationxml-dtd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-018.html" rel="bookmark" title="Permalink to Imprimatur-018">Imprimatur-018</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2010-10-19T22:05:00+01:00"> Tue 19 October 2010 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>I've just released <a href="http://imprimatur.wikispaces.com/">Imprimatur 018</a>, the changes are:</p>
+<ul>
+<li>GETs don't follow redirects by default.</li>
+<li>Fixed example given in tests directory.</li>
+<li>If no arguments are given on the command line, throws an exception saying no file specified.</li>
+</ul>
+                <a class="readmore" href="/imprimatur-018.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-017.html" rel="bookmark" title="Permalink to Imprimatur 017">Imprimatur 017</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2010-08-11T22:03:00+01:00"> Wed 11 August 2010 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Someone requested that Imprimatur support HTTPS requests. It did seem an oversight, so I've remedied that with the newly released <a href="http://sourceforge.net/projects/imprimatur/">Imprimatur 017</a>.</p>
+<p>HTTPS requests are supported with the <code>scheme</code> attribute, which has a default of <code>http</code>, but can also be set to <code>https</code>. The <code>scheme</code> attribute can be used in …</p>
+                <a class="readmore" href="/imprimatur-017.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-016.html" rel="bookmark" title="Permalink to Imprimatur 016">Imprimatur 016</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2009-07-01T22:00:00+01:00"> Wed 01 July 2009 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>New version of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a> out that adds the following feature:  </p>
+<p>* Can now set a request to follow redirects.  </p>
+<p>Incidentally, I think I like the new look SourceForge. It could still do with being trimmed back to make it faster, but an improvement nonetheless.</p>
+                <a class="readmore" href="/imprimatur-016.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-015.html" rel="bookmark" title="Permalink to imprimatur-015">imprimatur-015</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2009-05-13T01:13:00+01:00"> Wed 13 May 2009 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://sourceforge.net/project/showfiles.php?group_id=145016&amp;package_id=159509">New release</a> of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a> with the following changes:  </p>
+<blockquote>
+<p>* Changed so that a regex matches if it's found anywhere within the string.</p>
+</blockquote>
+<p>Previously you'd have to use the pattern <code>.*hello.*</code> to match 'hello' within a response. Now you can just use the pattern <code>hello</code> to do the same thing.  </p>
+<blockquote>
+<p>* In regexes …</p></blockquote>
+                <a class="readmore" href="/imprimatur-015.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-014.html" rel="bookmark" title="Permalink to Imprimatur 014">Imprimatur 014</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2008-06-19T19:32:00+01:00"> Thu 19 June 2008 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>A bug-fix <a href="http://sourceforge.net/project/showfiles.php?group_id=145016&amp;package_id=159509">release</a> of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a>. Fixed a problem that has been there for ages. If you started Imprimatur with a file name only (no path) for the script file, and then referred to another file in the script file, there would be a problem. I fixed it using:  </p>
+<p><code>File file …</code></p>
+                <a class="readmore" href="/imprimatur-014.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-013.html" rel="bookmark" title="Permalink to Imprimatur 013">Imprimatur 013</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2008-06-18T13:20:00+01:00"> Wed 18 June 2008 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>The <a href="http://sourceforge.net/project/showfiles.php?group_id=145016&amp;package_id=159509">new release</a> of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a> has the following changes:  </p>
+<ul>
+<li>The [response-code]{style="font-style: italic;"} element was missing from the<response-code> DTD, so that's been added in.<br>
+   </response-code></li>
+<li>Now supports the PUT method.</li>
+<li>Can <a href="http://imprimatur.wikispaces.com/BodyFile">set and check HTTP headers</a>.</li>
+<li>Added a [body-file]{style="font-style: italic;"} attribute to the [request]{style="font-style: italic;"} element …</li></ul>
+                <a class="readmore" href="/imprimatur-013.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/imprimatur-012.html" rel="bookmark" title="Permalink to Imprimatur 012">Imprimatur 012</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2007-11-29T23:37:00+00:00"> Thu 29 November 2007 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>The latest release of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a> supports the HEAD method, and it has the option to follow redirects.</p>
+                <a class="readmore" href="/imprimatur-012.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+    </ul><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 2
+        <a href="/tag/imprimatur2.html">&raquo;</a>
+</p>
+  </section><!-- /#content -->
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/theme/images/icons/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+</body>
+</html>

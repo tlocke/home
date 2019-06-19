@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tony Locke - Lisp</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/theme/css/main.css" />
+  <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+
+
+
+
+
+</head>
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+    </header><!-- /#banner -->
+    <nav id="menu"><ul>
+        <li><a href="/">Tony Locke</a></li>
+          
+        <li><a href="/archives.html">Archive</a></li>
+        <li><a href="http://twitter.com/t_locke">Twitter</a></li>
+        <li><a href="https://github.com/tlocke">GitHub</a></li>
+    </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">Lisp</h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2009-08-09T20:11:00+01:00">
+      Sun 09 August 2009
+    </time>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>Like many others, I read Paul Graham's <a href="http://www.paulgraham.com/avg.html">Lisp</a> <a href="http://www.paulgraham.com/power.html">essays</a> and thought I should give Lisp a go. I installed <a href="http://clojure.org/">Clojure</a> and wrote my first Lisp program:  </p>
+<div class="highlight"><pre><span></span><span class="nv">(defn</span> <span class="nv">num_books</span>
+ <span class="nv">(</span><span class="p">[</span><span class="nv">dist</span><span class="p">]</span>
+   <span class="nv">(num_books</span> <span class="nv">dist</span> <span class="mi">0</span> <span class="mi">0</span><span class="nv">))</span>
+ <span class="nv">(</span><span class="p">[</span><span class="nv">dist</span> <span class="nv">achieved</span> <span class="nv">nbooks</span><span class="p">]</span>
+ <span class="nv">(if</span>
+   <span class="nv">(&gt;=</span> <span class="nv">achieved</span> <span class="nv">dist)</span>
+   <span class="nv">nbooks</span>
+   <span class="nv">(num_books</span> <span class="nv">dist</span>
+       <span class="nv">(+</span> <span class="nv">achieved</span>
+           <span class="nv">(/</span> <span class="mi">1</span>
+               <span class="nv">(+</span> <span class="nv">nbooks</span> <span class="mi">2</span><span class="nv">)))</span>
+       <span class="nv">(+</span> <span class="nv">nbooks</span> <span class="mi">1</span><span class="nv">)))))</span>
+
+<span class="nv">(println</span> <span class="nv">(num_books</span> <span class="mf">1.5</span><span class="nv">))</span>
+</pre></div>
+
+
+<p>If you put a book on the edge of a table you can balance it so that it sticks out half a book length. Place another judiciously on top and it'll stick out 1/2 + 1/3 book lengths. You give the function above a number of book lengths you want the stack to stick out, and it'll return the number of books you need.  </p>
+<p>Coming from a Python background, wouldn't it make sense to use whitespace instead of parentheses?  </p>
+<div class="highlight"><pre><span></span>defn num_books
+[dist]
+num_books dist 0 0
+[dist achieved nbooks]
+if
+   &gt;= achieved dist
+   nbooks
+   num_books dist
+       + achieved
+           / 1
+               + nbooks 2
+       + nbooks 1
+
+println
+num_books desired_distance
+</pre></div>
+
+
+<p>Also, I'm interested to compare this function with its Python equivalent:  </p>
+<div class="highlight"><pre><span></span>def num_books(desired):
+achieved = 0
+nbooks = 0
+while achieved &lt; desired:
+ achieved = achieved + 1 / (nbooks + 2)
+ nbooks = nbooks + 1
+return nbooks
+</pre></div>
+
+
+<p>The Python one is shorter, how can this be? Okay a re-write of the Lisp version:  </p>
+<div class="highlight"><pre><span></span><span class="nv">(defn</span> <span class="nv">num_books</span>
+    <span class="nv">(</span><span class="p">[</span><span class="nv">dist</span><span class="p">]</span>
+        <span class="nv">(loop</span> <span class="p">[</span><span class="nv">nbooks</span> <span class="mi">0</span> <span class="nv">achieved</span> <span class="mi">0</span><span class="p">]</span>
+          <span class="nv">(if</span>
+              <span class="nv">(&lt;</span> <span class="nv">achieved</span> <span class="nv">dist)</span>
+            <span class="nv">(recur</span>
+                <span class="nv">(inc</span> <span class="nv">nbooks)</span>
+                <span class="nv">(+</span> <span class="nv">achieved</span>
+                    <span class="nv">(/</span> <span class="mi">1</span>
+                        <span class="nv">(+</span> <span class="nv">nbooks</span> <span class="mi">2</span><span class="nv">))))</span>
+                <span class="nv">nbooks))))</span>
+</pre></div>
+
+
+<p>Python 166 chars, Lisp 186 characters. What am I doing wrong?</p>
+  </div><!-- /.entry-content -->
+</section>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/theme/images/icons/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+</body>
+</html>

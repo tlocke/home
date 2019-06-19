@@ -1,4 +1,5 @@
 Title: Public Transport 2.0
+slug: pt20
 
 <div>What follows is a business idea that you can start implementing today. Please get in touch if you'd like my help to get it going. I can do the computery bits but I'd be out of my depth doing the rest.<br>
 </div>

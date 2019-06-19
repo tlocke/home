@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tony Locke - imprimatur-015</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/theme/css/main.css" />
+  <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+
+
+
+
+    <meta name="tags" content="imprimatur" />
+
+</head>
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+    </header><!-- /#banner -->
+    <nav id="menu"><ul>
+        <li><a href="/">Tony Locke</a></li>
+          
+        <li><a href="/archives.html">Archive</a></li>
+        <li><a href="http://twitter.com/t_locke">Twitter</a></li>
+        <li><a href="https://github.com/tlocke">GitHub</a></li>
+    </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">imprimatur-015</h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2009-05-13T01:13:00+01:00">
+      Wed 13 May 2009
+    </time>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p><a href="http://sourceforge.net/project/showfiles.php?group_id=145016&amp;package_id=159509">New release</a> of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a> with the following changes:  </p>
+<blockquote>
+<p>* Changed so that a regex matches if it's found anywhere within the string.</p>
+</blockquote>
+<p>Previously you'd have to use the pattern <code>.*hello.*</code> to match 'hello' within a response. Now you can just use the pattern <code>hello</code> to do the same thing.  </p>
+<blockquote>
+<p>* In regexes, a dot character now matches line terminators as well.</p>
+</blockquote>
+<p>Imprimatur used to remove all control characters from the response, and then do the match. I thought it was better not to do this behind-the-scenes chicanery and make '.' match line terminators as well.</p>
+</p>
+  </div><!-- /.entry-content -->
+</section>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/theme/images/icons/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tony Locke - language-design tag</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/theme/css/main.css" />
+  <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+</head>
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+    </header><!-- /#banner -->
+    <nav id="menu"><ul>
+        <li><a href="/">Tony Locke</a></li>
+          
+        <li><a href="/archives.html">Archive</a></li>
+        <li><a href="http://twitter.com/t_locke">Twitter</a></li>
+        <li><a href="https://github.com/tlocke">GitHub</a></li>
+    </ul></nav><!-- /#menu -->
+  <section id="content">
+    <ul id="post-list">
+          <li>
+            <article>
+              <header>
+                <h2 class="entry-title"><a href="/python-global-keyword-considered.html">Python 'global' Keyword Considered Harmful</a></h2>
+              </header>
+<footer class="post-info">
+        <abbr class="published" title="2010-08-05T21:38:00+01:00">
+                Published: Thu 05 August 2010
+        </abbr>
+
+
+</footer><!-- /.post-info --><p>Looking at Python's <code>global</code> keyword led me to think how I'd like <a href="http://en.wikipedia.org/wiki/Scope_(programming)">scoping</a> to work. Some languages have lexical scoping, some dynamic scoping and some a mixture of two. I think scoping should be entirely lexical. My language (let's call it Klop) is dynamically typed, and variables are declared the first time they are assigned, so if you wrote:</p>
+<div>
+
+    x = 0
+
+    def f():
+      return x
+
+    def g():
+      x = 1
+      return f()
+
+Calling `g()` would return 1. In most languages with lexical scoping you can declare a variable with the same name, at a more local scope. With Klop you can't, and I think that this would make programs more readable.
+
+</div>            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/unlimited-integer-type.html" rel="bookmark" title="Permalink to Unlimited Integer Type">Unlimited Integer Type</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2009-01-28T20:12:00+00:00"> Wed 28 January 2009 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>In my ideal programming language, the size of the integer type would only be limited by the storage space of the machine, it wouldn't have an artificial limit. It would be like the <a href="http://java.sun.com/javase/6/docs/api/java/math/BigInteger.html">BigInt</a> type in Java. This is exactly what <a href="http://clojure.org/data_structures">Clojure</a> does. Brilliant!  </p>
+<p>There isn't such an elegant solution …</p>
+                <a class="readmore" href="/unlimited-integer-type.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/comparing-incomparable-types.html" rel="bookmark" title="Permalink to Comparing incomparable types">Comparing incomparable types</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2008-12-07T11:00:00+00:00"> Sun 07 December 2008 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>The <a href="http://docs.python.org/dev/3.0/whatsnew/3.0.html#ordering-comparisons">Python 3 changes doc</a> says:  </p>
+<blockquote>
+<p>objects of different incomparable types always compare unequal to each other.</p>
+</blockquote>
+<p>I don't think this is the right way to go. If you try to compare incomparable types, a <code>TypeError</code> exception should be thrown. For example, at the moment if you write <code>9 == 'hello' …</code></p>
+                <a class="readmore" href="/comparing-incomparable-types.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/whitespace.html" rel="bookmark" title="Permalink to Whitespace">Whitespace</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2008-11-25T18:13:00+00:00"> Tue 25 November 2008 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>One of the truly excellent things about Python is its use of whitespace to group statements. I think Lisp could benefit from the same treatment. Someone should write a pre-parser for <a href="http://en.wikipedia.org/wiki/Clojure">Clojure</a> to do it.</p>
+                <a class="readmore" href="/whitespace.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+          <li>
+              <article class="hentry">
+                <header>
+                  <h2 class="entry-title"><a href="/pep-285.html" rel="bookmark" title="Permalink to PEP 285">PEP 285</a>
+                  </h2>
+                </header>
+                <footer class="post-info">
+                  <time class="published" datetime="2008-11-25T17:34:00+00:00"> Tue 25 November 2008 </time>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>I think it was a good idea to add a boolean type to <a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a>, but I don't agree entirely with <a href="http://www.python.org/dev/peps/pep-0285/">PEP 285</a>. Specifically:  </p>
+<blockquote>
+<p>4) Should we strive to eliminate non-Boolean operations on bools in the future, through suitable warnings, so that for example True+1 would eventually (in Python 3000 …</p></blockquote>
+                <a class="readmore" href="/pep-285.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article>
+          </li>
+    </ul><!-- /#posts-list -->
+  </section><!-- /#content -->
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/theme/images/icons/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+</body>
+</html>
