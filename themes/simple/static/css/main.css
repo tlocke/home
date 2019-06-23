@@ -74,3 +74,8 @@ nav li:not(:first-child):before {
 #contentinfo {
   text-align: center;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
