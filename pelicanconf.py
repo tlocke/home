@@ -44,3 +44,6 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 DIRECT_TEMPLATES = (
     'index', 'tags', 'categories', 'archives', 'period_archives'
 )
+
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
