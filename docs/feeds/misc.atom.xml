@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tony Locke - misc</title><link href="/" rel="alternate"></link><link href="https://www.tlocke.org.uk/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2018-05-22T00:00:00+01:00</updated><entry><title>Getting rid of Google Analytics</title><link href="/getting-rid-of-google-analytics.html" rel="alternate"></link><published>2018-05-22T00:00:00+01:00</published><updated>2018-05-22T00:00:00+01:00</updated><author><name>Tony Locke</name></author><id>tag:None,2018-05-22:/getting-rid-of-google-analytics.html</id><summary type="html">&lt;p&gt;I don't want my projects to track users, so I'm getting rid of
+&lt;a href="https://www.google.com/analytics/"&gt;Google Analytics&lt;/a&gt;. I've gone on to my
+Google Analytics account and found 7 tracking codes that I've set up.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first one is the code for OwnId, which was a website that made it easy
+  to use …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;I don't want my projects to track users, so I'm getting rid of
+&lt;a href="https://www.google.com/analytics/"&gt;Google Analytics&lt;/a&gt;. I've gone on to my
+Google Analytics account and found 7 tracking codes that I've set up.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first one is the code for OwnId, which was a website that made it easy
+  to use a custom host name as your OpenId. OpenId never really took off,
+  email addresses are easier as an ID than host names. The code is in an
+  &lt;a href="https://code.google.com/archive/p/openid-delegator/"&gt;SVN repository on Google
+  Code&lt;/a&gt;, and I've removed
+  the tracking id from Google Analytics.&lt;/li&gt;
+&lt;li&gt;I've got Google Analytics tracking ID set up for my old blog. In the blog
+  settings it's not activated though. I've deleted the tracking id from
+  Google Analytics now.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mtrhub.com/"&gt;MtrHub&lt;/a&gt; is a website I made for keeping track of
+  utility meter readings. Looking at the code and the website I don't think it
+  currently uses Google Analytics. I've deleted teh tracking id form Google
+  Analytics now.&lt;/li&gt;
+&lt;li&gt;There's also a tracking id for the http://www.own-id.com/. That's closed now
+  so I've deleted the tracking id.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.polifesto.com/"&gt;Polifesto&lt;/a&gt; is a website for anyone to write a
+  political manifesto. It doesn't look like it uses Google Analytics at the
+  moment. I've deleted its tracking id.&lt;/li&gt;
+&lt;li&gt;My old website which http://www.tlocke.org.uk used to point to, apparently
+  had a tracking id. The site on Google Pages in GSUite. I've turned off
+  Google Pages for &lt;code&gt;tlocke.org.uk&lt;/code&gt;. I've deleted its tracking id.&lt;/li&gt;
+&lt;li&gt;Finally, my &lt;a href="http://maths.tlocke.org.uk"&gt;maths website&lt;/a&gt;, doesn't use
+  Google Analytics any more, so I've deleted its tracking id.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That was a lot easier than I thought it would be.&lt;/p&gt;
+&lt;p&gt;And now I've deleted my Google Analytics account!&lt;/p&gt;</content></entry><entry><title>Non-tracking blog</title><link href="/non-tracking-blog.html" rel="alternate"></link><published>2018-05-06T00:00:00+01:00</published><updated>2018-05-06T00:00:00+01:00</updated><author><name>Tony Locke</name></author><id>tag:None,2018-05-06:/non-tracking-blog.html</id><summary type="html">&lt;p&gt;My website and blog were hosted by Google, which tracks people on an industrial
+scale. So I've now moved to &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; using
+a site that's statically generated using
+&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;. GitHub Pages have better privacy
+than Google, but the deeper point is that a static site stored in a git …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My website and blog were hosted by Google, which tracks people on an industrial
+scale. So I've now moved to &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; using
+a site that's statically generated using
+&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;. GitHub Pages have better privacy
+than Google, but the deeper point is that a static site stored in a git
+repository can be easily moved to another host.&lt;/p&gt;
+&lt;p&gt;So, this is the first post on the new blog!&lt;/p&gt;</content></entry><entry><title>On URLs</title><link href="/on-urls.html" rel="alternate"></link><published>2016-01-01T00:00:00+00:00</published><updated>2016-01-01T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2016-01-01:/on-urls.html</id><summary type="html">&lt;h2&gt;Trailing slashes&lt;/h2&gt;
+
+&lt;p&gt;According to &lt;a href="http://www.gbiv.com/protocols/uri/rfc/rfc3986.html"&gt;RFC 3986&lt;/a&gt; the following two URLs are not necessarily equivalent:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://gigask.foo/organizations/3&lt;/li&gt;
+&lt;li&gt;http://gigask.foo/organizations/3/&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;But most users would think the two were equivalent. What's to be done? I think the RFC should have said that the first should be normalized …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Trailing slashes&lt;/h2&gt;
+
+&lt;p&gt;According to &lt;a href="http://www.gbiv.com/protocols/uri/rfc/rfc3986.html"&gt;RFC 3986&lt;/a&gt; the following two URLs are not necessarily equivalent:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://gigask.foo/organizations/3&lt;/li&gt;
+&lt;li&gt;http://gigask.foo/organizations/3/&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;But most users would think the two were equivalent. What's to be done? I think the RFC should have said that the first should be normalized to the second. However, working with the RFC as it is, we can issue a 301 (Moved Permanently) from http://gigask.foo/organizations/3 to http://gigask.foo/organizations/3/. Purists might object that a 301 is for a resource that used to exist but has moved, and http://gigask.foo/organizations/3 never did exist. I'm a purist but I don't think this use of 301 stretches its meaning too far.&lt;/p&gt;
+
+&lt;h2&gt;Cool URIs don't change&lt;/h2&gt;
+
+&lt;p&gt;Say we have to refer to organizations, we might have URLs like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://gigask.foo/organizations/sweb/&lt;/li&gt;
+&lt;li&gt;http://gigask.foo/organizations/centrica/&lt;/li&gt;
+&lt;li&gt;http://gigask.foo/organizations/eon/&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;This is the approach favoured in http://www-128.ibm.com/developerworks/library/us-cranky8.html. If Sweb undergoes a rebranding and the new name is EDF can make http://gigask.foo/organizations/sweb send a permanet redirect to: &lt;/p&gt;
+
+&lt;p&gt;http://gigask.foo/organizations/edf/&lt;/p&gt;
+
+&lt;p&gt;Some problems with this approach are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If the URLs are maintained manually, it takes time / money for a diligent webmaster to remember to add the redirect.&lt;/li&gt;
+&lt;li&gt;If the URLs are for a web application, the web application software becomes more complicated, again costing time / money. &lt;/li&gt;
+&lt;li&gt;What if another company starts up with the name SWEB? (Unlikely with this example, but you can imagine it being a problem in other contexts).&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;These problems are solved with a scheme like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://gigask.foo/organizations/974563/&lt;/li&gt;
+&lt;li&gt;http://gigask.foo/organizations/67/&lt;/li&gt;
+&lt;li&gt;http://gigask.foo/organizations/879881/&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;This takes &lt;a href="http://www.w3.org/Provider/Style/URI"&gt;Cool URIs don't change&lt;/a&gt; to an extreme. The drawback is of course that URLs lose much of their meaning, but my view is that the tradeoff is worth it. Okay, so you've convinced my to use meaningless ids. What about using ISBN codes for books and license numbers for cars as my id?&lt;/p&gt;
+
+&lt;h2&gt;Established ids in URLs?&lt;/h2&gt;
+
+&lt;p&gt;The book 'Being And Nothingness' by Jean-Paul Sartre has ISBN 0671867806. If on my website I have reviews of books, should I use the ISBN?&lt;/p&gt;
+
+&lt;p&gt;http://gigask.foo/book-reviews/0671867806/&lt;/p&gt;
+
+&lt;p&gt;No, because I may have got the isbn wrong, and then the URI would have to change. Better to have a completely new id:&lt;/p&gt;
+
+&lt;p&gt;http://gigask.foo/book-reviews/2859783/&lt;/p&gt;
+
+&lt;p&gt;But what if I have the ISBN and I want to find the corresponding review on gigask.com? It should be possible to do a query like:&lt;/p&gt;
+
+&lt;p&gt;http://gigask.foo/book-reviews/?isbn=0671867806&lt;/p&gt;
+
+&lt;p&gt;This is the URL equivalent to the &lt;a href="http://www.bcarter.com/intsurr1.htm"&gt;intelligent versus surrogate keys&lt;/a&gt; debate in SQL.&lt;/p&gt;</content></entry><entry><title>House Manual</title><link href="/house-manual.html" rel="alternate"></link><published>2008-03-22T00:00:00+00:00</published><updated>2008-03-22T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-22:/house-manual.html</id><summary type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;h2&gt;Recycling&lt;/h2&gt;
+There are 3 rubbish containers:&lt;br&gt;
+&lt;h2&gt;Black Box&lt;/h2&gt;
+This is in the cupboard under the stairs and there's a &lt;a href="http://www.westwiltshire.gov.uk/index/env/rubbish_waste_and_recycling/recycling-kerbside-collection/kerbside-recycling-black-boxes.htm" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;list of what can be put in it&lt;/font&gt;&lt;/a&gt;. For tin cans, bottles etc, make sure they've been cleaned in the dishwasher before you put them in.&lt;br&gt;
+&lt;h2&gt;Green Bin&lt;/h2&gt;
+This is the …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;h2&gt;Recycling&lt;/h2&gt;
+There are 3 rubbish containers:&lt;br&gt;
+&lt;h2&gt;Black Box&lt;/h2&gt;
+This is in the cupboard under the stairs and there's a &lt;a href="http://www.westwiltshire.gov.uk/index/env/rubbish_waste_and_recycling/recycling-kerbside-collection/kerbside-recycling-black-boxes.htm" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;list of what can be put in it&lt;/font&gt;&lt;/a&gt;. For tin cans, bottles etc, make sure they've been cleaned in the dishwasher before you put them in.&lt;br&gt;
+&lt;h2&gt;Green Bin&lt;/h2&gt;
+This is the green wheelie bin outside, and there's a &lt;a href="http://www.westwiltshire.gov.uk/index/env/rubbish_waste_and_recycling/recycling-kerbside-collection/kerbside-recycling-greenbins-contam.htm" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;list of what can go in it&lt;/font&gt;&lt;/a&gt;.&lt;br&gt;
+&lt;h2&gt;Black Bin&lt;/h2&gt;
+This is the black wheelie bin outside, and this can hold any other rubbish.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content></entry><entry><title>Identica</title><link href="/identica.html" rel="alternate"></link><published>2008-03-21T00:00:00+00:00</published><updated>2008-03-21T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-21:/identica.html</id><summary type="html">&lt;p&gt;&lt;a href="http://identi.ca/tlocke"&gt;Identica&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://identi.ca/tlocke"&gt;Identica&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Haskell</title><link href="/haskell.html" rel="alternate"></link><published>2008-03-20T00:00:00+00:00</published><updated>2008-03-20T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-20:/haskell.html</id><summary type="html">&lt;div&gt;
+&lt;div&gt;An aide memoire.&lt;br&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;
+l = [1, 2, 3]&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+All elements must be of same type. Length doesn't affect the type.&lt;br&gt;
+&lt;br&gt;
+areaCirc r = pi * r^2&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Type names always start with a capital letter.&lt;br&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;br&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Parametric polymorphism (generics)&lt;br&gt;
+&lt;pre&gt;length :: [a] -&amp;gt; Int&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;span&gt;Type constraint after :: and before =&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;span&gt;)&lt;/span&gt; &lt;span&gt;::&lt;/span&gt; &lt;span&gt;(&lt;/span&gt;&lt;span&gt;Num&lt;/span&gt; &lt;span&gt;a&lt;/span&gt;&lt;span&gt;)&lt;/span&gt; &lt;span&gt;=&amp;gt;&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;-&amp;gt;&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;-&amp;gt;&lt;/span&gt; &lt;span&gt;a&lt;br&gt;&lt;br&gt;Num is …&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/p&gt;</summary><content type="html">&lt;div&gt;
+&lt;div&gt;An aide memoire.&lt;br&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;
+l = [1, 2, 3]&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+All elements must be of same type. Length doesn't affect the type.&lt;br&gt;
+&lt;br&gt;
+areaCirc r = pi * r^2&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Type names always start with a capital letter.&lt;br&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;br&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Parametric polymorphism (generics)&lt;br&gt;
+&lt;pre&gt;length :: [a] -&amp;gt; Int&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;span&gt;Type constraint after :: and before =&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;&lt;span&gt;)&lt;/span&gt; &lt;span&gt;::&lt;/span&gt; &lt;span&gt;(&lt;/span&gt;&lt;span&gt;Num&lt;/span&gt; &lt;span&gt;a&lt;/span&gt;&lt;span&gt;)&lt;/span&gt; &lt;span&gt;=&amp;gt;&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;-&amp;gt;&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;-&amp;gt;&lt;/span&gt; &lt;span&gt;a&lt;br&gt;&lt;br&gt;Num is a typeclass.&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span style="font-family:arial,sans-serif"&gt;&lt;b&gt;Guards&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;span&gt;mySignum&lt;/span&gt; &lt;span&gt;x&lt;/span&gt;
+    &lt;span&gt;|&lt;/span&gt; &lt;span&gt;x&lt;/span&gt; &lt;span&gt;&amp;lt;&lt;/span&gt; &lt;span&gt;0&lt;/span&gt;     &lt;span&gt;=&lt;/span&gt; &lt;span&gt;-&lt;/span&gt;&lt;span&gt;1&lt;/span&gt;
+    &lt;span&gt;|&lt;/span&gt; &lt;span&gt;x&lt;/span&gt; &lt;span&gt;&amp;gt;&lt;/span&gt; &lt;span&gt;0&lt;/span&gt;     &lt;span&gt;=&lt;/span&gt; &lt;span&gt;1&lt;/span&gt;
+    &lt;span&gt;|&lt;/span&gt; &lt;span&gt;otherwise&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;0&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;b&gt;Pattern matching&lt;/b&gt;&lt;br&gt;&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;::&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt; &lt;span&gt;-&amp;gt;&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;1&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;10&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;2&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;6&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;3&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;4&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;4&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;3&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;5&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;2&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;6&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;1&lt;/span&gt;
+&lt;span&gt;pts&lt;/span&gt; &lt;span&gt;_&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;0&lt;br&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;Where&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;log2 x = higher x 0
+        where
+        higher x n
+                | power 2 n &amp;gt; x = n - 1
+                | otherwise     = higher x (n + 1)&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;map &lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;{- higher order function (has a function as an argument) -}&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;b&gt;Modules&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/pre&gt;
+&lt;pre&gt;import Data.List&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;foldr f acc xs -- fold right associative&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;foldl -- left associative&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;foldl' -- eager evaluation&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;foldr1 -- use last element as initial accumulator&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;b&gt;Lists&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;init -- all but last element&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;b&gt;List Comprehensions&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;span&gt;evensMinusOne&lt;/span&gt; &lt;span&gt;es&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;[&lt;/span&gt;&lt;span&gt;n&lt;/span&gt; &lt;span&gt;-&lt;/span&gt; &lt;span&gt;1&lt;/span&gt; &lt;span&gt;|&lt;/span&gt; &lt;span&gt;n&lt;/span&gt; &lt;span&gt;&amp;lt;-&lt;/span&gt; &lt;span&gt;es&lt;/span&gt;&lt;span&gt;,&lt;/span&gt; &lt;span&gt;isEven&lt;/span&gt; &lt;span&gt;n&lt;/span&gt;&lt;span&gt;]&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span&gt;&lt;b&gt;Data&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;data&lt;/span&gt; &lt;span&gt;Anniversary&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;Birthday&lt;/span&gt; &lt;span&gt;String&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt;       &lt;span&gt;-- name, year, month, day&lt;/span&gt;
+                 &lt;span&gt;|&lt;/span&gt; &lt;span&gt;Wedding&lt;/span&gt; &lt;span&gt;String&lt;/span&gt; &lt;span&gt;String&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt; &lt;span&gt;Int&lt;/span&gt; &lt;span&gt;-- spouse name 1, spouse name 2, year, month, day&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span&gt;&lt;b&gt;As patterns&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span&gt;contrivedMap&lt;/span&gt; &lt;span&gt;f&lt;/span&gt; &lt;span&gt;list&lt;/span&gt;&lt;span&gt;@&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;x&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span&gt;xs&lt;/span&gt;&lt;span&gt;)&lt;/span&gt; &lt;span&gt;=&lt;/span&gt; &lt;span&gt;f&lt;/span&gt; &lt;span&gt;list&lt;/span&gt; &lt;span&gt;x&lt;/span&gt; &lt;span&gt;:&lt;/span&gt; &lt;span&gt;contrivedMap&lt;/span&gt; &lt;span&gt;f&lt;/span&gt; &lt;span&gt;xs&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;span&gt;&lt;b&gt;Do&lt;/b&gt;&lt;br&gt;&lt;br&gt;main = do  &lt;br&gt;    putStrLn "What's your first name?"  &lt;br&gt;    firstName &amp;lt;- getLine  &lt;br&gt;    putStrLn "What's your last name?"  &lt;br&gt;    lastName &amp;lt;- getLine  &lt;br&gt;    let bigFirstName = map toUpper firstName  &lt;br&gt;        bigLastName = map toUpper lastName  &lt;br&gt;    putStrLn $ "hey " ++ bigFirstName ++ " " ++ bigLastName ++ ", how are you?"  &lt;br&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/p&gt;</content></entry><entry><title>Puzzle</title><link href="/puzzle.html" rel="alternate"></link><published>2008-03-19T00:00:00+00:00</published><updated>2008-03-19T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-19:/puzzle.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.mycoted.com/Four_Men_in_Hats"&gt;Four Men In Hats&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.mycoted.com/Four_Men_in_Hats"&gt;Four Men In Hats&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Earliest Memories</title><link href="/earliest-memories.html" rel="alternate"></link><published>2008-03-18T00:00:00+00:00</published><updated>2008-03-18T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-18:/earliest-memories.html</id><summary type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;h3&gt;Gallum&lt;/h3&gt;
+When I was born we lived on a narrow boat. I can't remember anything from this time.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Ensley Gardens&lt;/h3&gt;
+Or 'Ensley Gargens' as we said as kids, and my parents picked up. I can remember walking in from the back garden, crossing the threshold of the door, with the …&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;h3&gt;Gallum&lt;/h3&gt;
+When I was born we lived on a narrow boat. I can't remember anything from this time.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Ensley Gardens&lt;/h3&gt;
+Or 'Ensley Gargens' as we said as kids, and my parents picked up. I can remember walking in from the back garden, crossing the threshold of the door, with the radio on (I think it was the Archers, but definitely Radio 4). As I remember it, the back door led into the kitchen which was painted a vivid blue.&lt;br&gt;
+&lt;br&gt;
+At about this time I remember jumping up and down on a bed with my brother, my Granny Helen in the room. I think there was Noddy wallpaper on the wall.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Bearfield Buildings&lt;/h3&gt;
+I can remember sitting up in bed on my own thinking, 'Wow, I'm four years old today'. I sort of mentally took a photo looking down on myself.&lt;br&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content></entry><entry><title>Creationism</title><link href="/creationism.html" rel="alternate"></link><published>2008-03-17T00:00:00+00:00</published><updated>2008-03-17T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-17:/creationism.html</id><summary type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;div&gt;I'm about to go to a talk by &lt;a href="http://www.men.bris.ac.uk/contact/acstaff/scb.html" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Stuart Burgess&lt;/font&gt;&lt;/a&gt; on &lt;a href="http://en.wikipedia.org/wiki/Intelligent_design" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Intelligent Design&lt;/font&gt;&lt;/a&gt;. It seems to me that one of the reasons why evolution is a better theory than ID is because ID begs the question, 'Who designed the designer?'. Burgess would probably reply that if there are instances where …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;div&gt;I'm about to go to a talk by &lt;a href="http://www.men.bris.ac.uk/contact/acstaff/scb.html" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Stuart Burgess&lt;/font&gt;&lt;/a&gt; on &lt;a href="http://en.wikipedia.org/wiki/Intelligent_design" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Intelligent Design&lt;/font&gt;&lt;/a&gt;. It seems to me that one of the reasons why evolution is a better theory than ID is because ID begs the question, 'Who designed the designer?'. Burgess would probably reply that if there are instances where evolution doesn't provide an explanation, there must have been an intelligent designer. In an &lt;a href="http://www.rationalist.org.uk/newhumanist/issue02summer/creationism.shtml" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;article&lt;/font&gt;&lt;/a&gt; he has co-authored he explains his view on creationism. He says:&lt;br&gt;
+&lt;blockquote&gt;According to evolution, the immense information that exists in the world has arisen by genetic mistakes. However, according to information theory, information cannot spontaneously arise by random processes.&lt;/blockquote&gt;
+Surely information &lt;i&gt;can&lt;/i&gt; spontaneously arise by random processes.&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;If you look at clouds going by, sooner or later you'll see something you recognize. &lt;/li&gt;
+&lt;li&gt;Sometimes there's a story in the media about a stain on wallpaper that looks like the face of Jesus. &lt;/li&gt;
+&lt;li&gt;Vegetables in rude shapes were always on That's Life on British TV.&lt;/li&gt;&lt;/ul&gt;
+The point is that some rare mutations in DNA will make it better adapted to its environment, but most of the mutations will disappear. We're only seeing today the DNA that has had beneficial mutations throughout its history. So the mutations are random, but whether they persist is not random, it's determined by the environment. Burgess goes on to say:&lt;br&gt;
+&lt;blockquote&gt;A bird cannot have evolved from any land creature because all the mechanisms needed for flight are very different from anything required for land. &lt;/blockquote&gt;
+Hold on, are they that different? I'm no biologist, but a bat doesn't look completely different from a rat. What about those halfway-house mammals that glide from tree to tree?The talk In Stuart Burgess's talk, he focussed on the beauty of nature. Stuart is a professor of engineering and his exposition of the aesthetic aspect of nature was very illuminating. He presented with great clarity with excellent use of visuals and audio. Stuart went on to ask how this beauty could have arisen. He said it was inconcievable that it could have arisen by accident, so there must have been an intelligent designer.&lt;br&gt;
+At the end of the talk there was an opportunity to ask questions. I put up my hand ready to ask, 'If there's an intelligent designer, who designed this intelligent designer?'. But I wasn't picked.&lt;br&gt;
+One of the problems with the talk was that he didn't explain Darwinism properly. He said that beauty doesn't arise randomly, but that's not true. Most mutations detract from beauty, but occasionally one happens that increases beauty. Where beauty is an advantage to that organism it persists, while the other mutations don't survive. Over a very long time, beautiful organisms gradually arise.&lt;br&gt;
+I'm very glad I went along, Stuart Burgess showed us loads of interesting stuff. He didn't show that Intelligent Design is a better theory than evolution though.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content></entry><entry><title>Creation Of Money</title><link href="/creation-of-money.html" rel="alternate"></link><published>2008-03-16T00:00:00+00:00</published><updated>2008-03-16T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-16:/creation-of-money.html</id><summary type="html">&lt;p&gt;&lt;i&gt;Joe writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+Tony,&lt;br&gt;
+Watch this video:&lt;br&gt;
+&lt;a href="http://hiddensecretsofmoney.com/videos/episode-4"&gt;http://hiddensecretsofmoney.com/videos/episode-4&lt;/a&gt;&lt;br&gt;
+It explains what I was talking about with banks creating most of the money supply.&lt;br&gt;
+Cheers&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;i&gt;Tony writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+I got to 9:41 into the video and found the bit that I disagreed with.&lt;br&gt;
+So I agree with the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;i&gt;Joe writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+Tony,&lt;br&gt;
+Watch this video:&lt;br&gt;
+&lt;a href="http://hiddensecretsofmoney.com/videos/episode-4"&gt;http://hiddensecretsofmoney.com/videos/episode-4&lt;/a&gt;&lt;br&gt;
+It explains what I was talking about with banks creating most of the money supply.&lt;br&gt;
+Cheers&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;i&gt;Tony writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+I got to 9:41 into the video and found the bit that I disagreed with.&lt;br&gt;
+So I agree with the first bit where the central bank (in this case the&lt;br&gt;
+federal reserve) creates money by giving the bank a cheque. Then the&lt;br&gt;
+video goes on to say that when a deposit is made, 90% is invested and&lt;br&gt;
+10% is kept. This is correct, but it is &lt;em&gt;not&lt;/em&gt; money creation. Putting&lt;br&gt;
+money into a bank account that pays interest is an &lt;em&gt;investment&lt;/em&gt;. If&lt;br&gt;
+you want to avoid investing, then put the money in a safe deposit box.&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;i&gt;Joe writes:&lt;br&gt;
+&lt;/i&gt;&lt;br&gt;
+You are missing the point - with fractional reserve banking you end up with 10 times as much cash in circulation as the original deposit. It is money creation. It is loaned into existance.&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;i&gt;Tony writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+If you have £100 and deposit it in a bank, they'll store £10 and invest the rest on your behalf. That £90 that they invest may well end up being deposited in a bank, and so on, but there's still only £100 in existence, no money has been created.&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;i&gt;Joe writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+In your scenario there is now £190 in existance. the original person still has £100 and now the next person has £90 that they need to pay back with interest. This cash is can be used to bid up priced and is inflationary.&lt;br&gt;
+&amp;nbsp;&lt;br&gt;
+Without wanting to sound patronising there are plenty of explanations about how it works and with different scenarios.&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;i&gt;Tony writes:&lt;/i&gt;&lt;br&gt;
+&lt;br&gt;
+No, there's still only the £100 pounds. When it says £100 on your bank&lt;br&gt;
+balance, it seems like you've actually got £100, but really the bank's&lt;br&gt;
+gone off and invested £90, so you've actually got £10 and a promise&lt;br&gt;
+from the bank that it'll &lt;em&gt;try&lt;/em&gt; and get you the £90 back if you&lt;br&gt;
+withdraw it. So sometimes you get a 'run' on the bank, where everyone&lt;br&gt;
+tries to get their original investment back, but that can't be done&lt;br&gt;
+immediately (and maybe not at all) because they've only got the £10&lt;br&gt;
+that they didn't invest. If the bank made good investments with your&lt;br&gt;
+money they'll get it back eventually, but if not then you'll never see&lt;br&gt;
+your money again. Unless of course the tax payer bails the bank out.&lt;br&gt;
+But at no stage does the bank create new money, only the central bank&lt;br&gt;
+can do that.&lt;br&gt;&lt;/p&gt;</content></entry><entry><title>Things To Take On Holiday</title><link href="/things-to-take-on-holiday.html" rel="alternate"></link><published>2008-03-15T00:00:00+00:00</published><updated>2008-03-15T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-15:/things-to-take-on-holiday.html</id><summary type="html">&lt;p&gt;Things to take on holiday.&lt;br&gt;
+&lt;br&gt;
+Passport&lt;br&gt;
+EU Health Card&lt;br&gt;
+Running kit&lt;br&gt;
+Money&lt;br&gt;
+Laptop &amp;amp; CPAP.&lt;br&gt;
+Plug adaptor.&lt;br&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Things to take on holiday.&lt;br&gt;
+&lt;br&gt;
+Passport&lt;br&gt;
+EU Health Card&lt;br&gt;
+Running kit&lt;br&gt;
+Money&lt;br&gt;
+Laptop &amp;amp; CPAP.&lt;br&gt;
+Plug adaptor.&lt;br&gt;&lt;/p&gt;</content></entry><entry><title>To Do</title><link href="/to-do.html" rel="alternate"></link><published>2008-03-14T00:00:00+00:00</published><updated>2008-03-14T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-14:/to-do.html</id><summary type="html">&lt;ul&gt;&lt;li&gt;A wiki for documentation. The thing is that you need to be able to easily copy over the docs from the previous version. Perhaps using tags?&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;&lt;li&gt;A wiki for documentation. The thing is that you need to be able to easily copy over the docs from the previous version. Perhaps using tags?&lt;/li&gt;&lt;/ul&gt;</content></entry><entry><title>Sleep</title><link href="/sleep.html" rel="alternate"></link><published>2008-03-13T00:00:00+00:00</published><updated>2008-03-13T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-13:/sleep.html</id><summary type="html">&lt;p&gt;My symptoms are that I'm waking up in the morning with a dull headache, and then I feel&lt;br&gt;
+sleepy and irritable throughout the day. This happens every day. It started a few months ago.&lt;br&gt;
+&lt;br&gt;
+The same symtoms occured a couple of years ago and I went to see my doctor …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My symptoms are that I'm waking up in the morning with a dull headache, and then I feel&lt;br&gt;
+sleepy and irritable throughout the day. This happens every day. It started a few months ago.&lt;br&gt;
+&lt;br&gt;
+The same symtoms occured a couple of years ago and I went to see my doctor, and I underwent a &lt;a href="http://en.wikipedia.org/wiki/Pulse_oximetry" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;pulse oximetry&lt;/font&gt;&lt;/a&gt; study.&lt;br&gt;
+The results were normal. After a while the symtoms subsided.&lt;br&gt;
+&lt;br&gt;
+This time I was hesitant about going to the doctor because the tests from last time were negative. However, I am convinced that&lt;br&gt;
+something is wrong. So I bought a pulse oximiter. There's an example graph below:&lt;br&gt;
+&lt;div style="DISPLAY:block;TEXT-ALIGN:left"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;img alt="Oximetry" src="/images/2008/oximetry.png"&gt;
+&lt;br&gt;
+&lt;br&gt;
+The results showed an ODI (oxygen desaturation index) of 0.6 which well within normal levels (I think). So my&lt;br&gt;
+current theory is that I've got &lt;a href="http://en.wikipedia.org/wiki/Upper_Airway_Resistance_Syndrome_%28UARS%29" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Upper Airway Resistance Syndrome (UARS)&lt;/font&gt;&lt;/a&gt;. I think the best way to test this theory is&lt;br&gt;
+to use a &lt;a href="http://en.wikipedia.org/wiki/CPAP" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;CPAP&lt;/font&gt;&lt;/a&gt; device and see if the symptoms improve. In the UK a prescription is required for this, so I'll my doctor on Monday.&lt;br&gt;
+&lt;br&gt;
+On 2nd July 2012 I recorded myself sleeping without using CPAP, and found that my breathing was a bit like Darth Vader's. Slight snoring, but nothing much to speak of.&lt;br&gt;&lt;/p&gt;</content></entry><entry><title>Vine</title><link href="/vine.html" rel="alternate"></link><published>2008-03-12T00:00:00+00:00</published><updated>2008-03-12T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-12:/vine.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=i6RLNKivpu8"&gt;Video of Double Guyot method.&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://www.bbc.co.uk/gardening/basics/techniques/growfruitandveg_growinggrapevines1.shtml"&gt;BBC grape vine page.&lt;/a&gt;&lt;br&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=i6RLNKivpu8"&gt;Video of Double Guyot method.&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://www.bbc.co.uk/gardening/basics/techniques/growfruitandveg_growinggrapevines1.shtml"&gt;BBC grape vine page.&lt;/a&gt;&lt;br&gt;&lt;/p&gt;</content></entry><entry><title>The Space Game</title><link href="/the-space-game.html" rel="alternate"></link><published>2008-03-11T00:00:00+00:00</published><updated>2008-03-11T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-11:/the-space-game.html</id><summary type="html">&lt;p&gt;These are the best scores at &lt;a href="http://sophia.estec.esa.int/thespacegame/game/"&gt;The Space Game&lt;/a&gt; of people I know.&lt;br&gt;
+&lt;br&gt;
+&lt;table style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px" bordercolor="#888" border="1" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;&lt;b&gt;Score&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;nbsp;Jamie&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;14.46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;nbsp;Matt&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;25.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;Charlotte&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;26.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&lt;font face="arial, sans-serif"&gt;&amp;nbsp;Duncan&lt;/font&gt;&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;33.59&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;nbsp;Ben&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;41.61&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;Me&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;72.78&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;These are the best scores at &lt;a href="http://sophia.estec.esa.int/thespacegame/game/"&gt;The Space Game&lt;/a&gt; of people I know.&lt;br&gt;
+&lt;br&gt;
+&lt;table style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px" bordercolor="#888" border="1" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;&lt;b&gt;Score&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;nbsp;Jamie&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;14.46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;nbsp;Matt&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;25.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;Charlotte&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;26.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&lt;font face="arial, sans-serif"&gt;&amp;nbsp;Duncan&lt;/font&gt;&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;33.59&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;nbsp;Ben&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;41.61&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;Me&lt;/td&gt;
+&lt;td style="width:60px"&gt;&amp;nbsp;72.78&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;/p&gt;</content></entry><entry><title>Bets</title><link href="/bets.html" rel="alternate"></link><published>2008-03-10T00:00:00+00:00</published><updated>2008-03-10T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-10:/bets.html</id><summary type="html">&lt;p&gt;Here are various bets I make with people. Let me know what you think and I'll add you in to the table. Tell me the URL to your website and I'll link your name.&lt;/p&gt;
+
+&lt;table align="bottom" cellpadding="3" width="100%"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td width="33%"&gt;&lt;b&gt;Bet&lt;/b&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;&lt;b&gt;For&lt;/b&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;&lt;b&gt;Against&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="33%"&gt;&lt;a href="http://blog.tlocke.org.uk/2007/07/ill-wager.html" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Heading the ball banned in football&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;Me&lt;/td&gt;
+&lt;td width="33%"&gt;&lt;a href="http://blog.tlocke.org.uk/2010/08/banning-of-heading-in-football.html"&gt;Toby&lt;/a&gt;, Paddy, Steve&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="33%"&gt;&lt;a href="http://blog.tlocke.org.uk/2007/07/sinclair-c5-is-straw-man.html" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Electric cars more …&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;Here are various bets I make with people. Let me know what you think and I'll add you in to the table. Tell me the URL to your website and I'll link your name.&lt;/p&gt;
+
+&lt;table align="bottom" cellpadding="3" width="100%"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td width="33%"&gt;&lt;b&gt;Bet&lt;/b&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;&lt;b&gt;For&lt;/b&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;&lt;b&gt;Against&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="33%"&gt;&lt;a href="http://blog.tlocke.org.uk/2007/07/ill-wager.html" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Heading the ball banned in football&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;Me&lt;/td&gt;
+&lt;td width="33%"&gt;&lt;a href="http://blog.tlocke.org.uk/2010/08/banning-of-heading-in-football.html"&gt;Toby&lt;/a&gt;, Paddy, Steve&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="33%"&gt;&lt;a href="http://blog.tlocke.org.uk/2007/07/sinclair-c5-is-straw-man.html" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Electric cars more popular than biofuel powered cars&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td width="33%"&gt;Me, Janos, Sarah, Jim, Paddy, Toby, Steve&lt;/td&gt;
+&lt;td width="33%"&gt;Dave, Jerry&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content></entry><entry><title>CV</title><link href="/cv.html" rel="alternate"></link><published>2008-03-09T00:00:00+00:00</published><updated>2008-03-09T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-09:/cv.html</id><summary type="html">&lt;div&gt;&lt;a href="mailto:tlocke@tlocke.org.uk"&gt;&lt;font color="#497fb1"&gt;tlocke@tlocke.org.uk&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Profile&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+Following a degree in physics I pursued an interest in computer software, working on an ERP (Enterprise Resource Planning) application in the C programming language. In 1996 I started writing web applications for Open World, an online marketing company for the luxury travel industry. I …&lt;/p&gt;</summary><content type="html">&lt;div&gt;&lt;a href="mailto:tlocke@tlocke.org.uk"&gt;&lt;font color="#497fb1"&gt;tlocke@tlocke.org.uk&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Profile&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+Following a degree in physics I pursued an interest in computer software, working on an ERP (Enterprise Resource Planning) application in the C programming language. In 1996 I started writing web applications for Open World, an online marketing company for the luxury travel industry. I worked with large travel companies such as Intercontinental Hotels and Hyatt Hotels. In 2001 I joined Wessex Water and developed an expertise in electricity bill processing, writing the &lt;a href="http://chellow.wikispaces.com/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Chellow&lt;/font&gt;&lt;/a&gt; bill processing software. I am a fan of the internet, free software, free culture and wikis. My other Free Software projects are &lt;a href="http://imprimatur.wikispaces.com/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Imprimatur&lt;/font&gt;&lt;/a&gt; (a web application testing tool), and &lt;a href="http://www.own-id.com/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Own-Id&lt;/font&gt;&lt;/a&gt; (a service for delegating OpenIds). &lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Current Skills&lt;/h3&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Computing skills including web applications with Python, Java, Postgresql and Apache Tomcat. 
+&lt;/li&gt;
+&lt;li&gt;Good understanding of electricity bill processing including EDI, MPANs (&lt;a href="http://en.wikipedia.org/wiki/Meter_Point_Administration_Number" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;contributor to the MPAN article on Wikipedia&lt;/font&gt;&lt;/a&gt;), DUoS, TUoS, CCL, VAT. Experience of handling half-hourly data. 
+&lt;/li&gt;
+&lt;li&gt;Maintaining relationships with energy suppliers, meter operators, data collectors and DNOs. 
+&lt;/li&gt;
+&lt;li&gt;Managing a small team of highly talented people.&lt;/li&gt;&lt;/ul&gt;
+&lt;br&gt;
+&lt;h3&gt;Employment History&lt;/h3&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;2001 to present - Wessex Water.&lt;/b&gt; I manage a small team responsible for processing energy bills, electricity supply changes and energy data. The team and I have developed systems to rapidly and accurately check electricity and gas bills and data. These systems also present a timely picture of the organization's energy use and spending. &lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;1995 to 2001 at Open World Limited &lt;/b&gt;- My first project at Open World was to automate the production of a training manual for AT&amp;amp;T. The experience of working for corporate clients throughout the software lifecycle has characterized my time at Open World. When the company moved to specialize in publishing hotel group websites in 1996, I was asked to do the back-end programming. I used the Python scripting language to write a number of CGIs that included a search, emailer (PGP encrypted), relocator and a simple auction. As the traffic to our sites became heavier, it became clear that spawning a new Python process for each CGI request was too inefficient. I decided to use a new architecture of Java Servlets and a relational database. One of the applications I wrote using this new architecture was a currency converter which took feeds from the UN and the IMF. As the applications became more complicated, and the websites themselves became more dynamic, it became clear that I needed to improve the application architecture again. With this new architecture, the applications generate XML, which is then transformed using an XSLT template that most closely fits the browser's content-type, character-encoding and language. For example, if someone with a WAP phone requests a page in Japanese with the Shift-JS encoding, a page will be generated based on an XSL template that most closely matches these criteria based on the HTTP specification. This architecture supports compound documents(documents containing dynamic elements from disparate sources) by using Server Side Includes. 
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;1994 to 1995 at APL&lt;/b&gt;. APL are a software company that produces a suite of programs for managing factories. It was my job to enhance the system according to customer requirements. The system was written in 'C' and ran on Unix and MS-DOS, using an Informix relational database. The enhancements ranged from small modifications to existing code, to writing whole new modules. The work involved visiting clients at their sites to discuss projects.&lt;/li&gt;&lt;/ul&gt;
+&lt;br&gt;
+&lt;h3&gt;Education&lt;/h3&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Sun Certified Programmer for Java2 Platform 
+&lt;/li&gt;
+&lt;li&gt;BSc. Hons. Theoretical and Computational Physics (2.2) &lt;a href="http://courses.cf.ac.uk/undergraduate/school/index.html?id=19" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Cardiff University&lt;/font&gt;&lt;/a&gt; 
+&lt;/li&gt;
+&lt;li&gt;'A' levels: Physics (B) Mathematics (C) Chemistry (C) 
+&lt;/li&gt;
+&lt;li&gt;GCSEs: Physics (A) Biology (A) Mathematics (B) Chemistry (B) C.D.T. (B) French (B) English Lit. (B) English Lang. (C) Art (C)&lt;/li&gt;&lt;/ul&gt;
+&lt;br&gt;
+&lt;h3&gt;Details&lt;/h3&gt;
+&lt;br&gt;
+Nationality: British&lt;br&gt;
+Date of birth: 1971-12-14&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Interests&lt;/h3&gt;
+&lt;br&gt;
+&lt;a href="http://blog.tlocke.org.uk/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Blogging&lt;/font&gt;&lt;/a&gt;, &lt;a href="http://blog.tlocke.org.uk/search/label/book-review" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;reading&lt;/font&gt;&lt;/a&gt;, walking, cycling, badminton, swimming and pubs.&lt;/p&gt;</content></entry><entry><title>CO2 Footprint</title><link href="/co2-footprint.html" rel="alternate"></link><published>2008-03-08T00:00:00+00:00</published><updated>2008-03-08T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-08:/co2-footprint.html</id><summary type="html">&lt;div style="clear:both"&gt;
+&lt;div&gt;
+&lt;h2&gt;&lt;a href="http://blog.tlocke.org.uk/search/label/co2-footprint" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Blog entries on CO2 footprint&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+Things I've done to reduce my CO2 footprint&lt;/h2&gt;
+Please let me know if I'm mistaken in doing these things. &lt;br&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed electricity supplier to one that uses 100% renewable energy. I chose &lt;a href="http://www.good-energy.co.uk/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Good Energy&lt;/font&gt;&lt;/a&gt; as my electricity supplier. I did a very rough calculation and I …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div style="clear:both"&gt;
+&lt;div&gt;
+&lt;h2&gt;&lt;a href="http://blog.tlocke.org.uk/search/label/co2-footprint" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Blog entries on CO2 footprint&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+Things I've done to reduce my CO2 footprint&lt;/h2&gt;
+Please let me know if I'm mistaken in doing these things. &lt;br&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Changed electricity supplier to one that uses 100% renewable energy. I chose &lt;a href="http://www.good-energy.co.uk/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Good Energy&lt;/font&gt;&lt;/a&gt; as my electricity supplier. I did a very rough calculation and I think I'm paying something under £5 / month more than I would have done with brown (fossil fuel) electricity. 
+&lt;/li&gt;
+&lt;li&gt;After reading &lt;a href="http://uk.blog.360.yahoo.com/blog-n8mQdaMld6nzBHpvRQIs7zE-?cq=1&amp;amp;p=32" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Heat&lt;/font&gt;&lt;/a&gt; I've given up flying. There's no way to fly without causing CO2 emissions. 
+&lt;/li&gt;
+&lt;li&gt;Growing ivy on the walls of my house to give shade in summer and some insulation in winter. Thanks to my friend Emily who suggested this. 
+&lt;/li&gt;
+&lt;li&gt;Sold my petrol powered car.&lt;/li&gt;
+&lt;li&gt;Using an 'organic box' scheme to deliver fruit, vegetables and fish.After reading &lt;a href="http://uk.blog.360.yahoo.com/blog-n8mQdaMld6nzBHpvRQIs7zE-?cq=1&amp;amp;p=32" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Heat&lt;/font&gt;&lt;/a&gt; I've realized that a delivered organic box is the best way to obtain food. I've put in an order with &lt;a href="http://www.abel-cole.co.uk/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Abel &amp;amp; Cole&lt;/font&gt;&lt;/a&gt;. My friend Andy Dolman recommended &lt;a href="http://www.riverford.co.uk/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;Riverford&lt;/font&gt;&lt;/a&gt; but being a contrarian I've ignored his wise advice. He'll be proved right of course.
+If you go with the right company the organic box idea has the following advantages over a supermarket in terms of climate change: &lt;br&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;No air freight, meaning greatly reduced CO2 emissions 
+&lt;/li&gt;
+&lt;li&gt;Mainly local produce reduces road travel 
+&lt;/li&gt;
+&lt;li&gt;Supermarkets themselves waste a whole lot of energy on heating / cooling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Water softener to make gas boiler more efficient. Also would presumably
+help when moving to other sources of heat. Found out from a plumber
+that this is possible with my boiler.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.tlocke.org.uk/2010/02/loft-insulation.html" rel="nofollow"&gt;Insulated loft&lt;/a&gt;.&lt;br&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Things I intend to do to reduce my CO2 footprint&lt;/h2&gt;
+&lt;div&gt;Please let me know if these are bogus.&lt;/div&gt;
+&lt;br&gt;
+&lt;b&gt;House&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Heat Recovery Ventilation (HRV). This seems to be the next step. The things is, I don't want to go around filling in all the draughty gaps before I've got HRV, otherwise the house will get really stuffy. I've had a quick look at the following HRV systems: 
+&lt;ul&gt;
+&lt;li&gt;The Daikin &lt;a href="http://www.ventyourhome.com/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;HRV system&lt;/font&gt;&lt;/a&gt;. Looks good, but doesn't have the intake going through the ground. This method of intake is described in the Passivhaus system. 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.admsystems.co.uk/" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;ADM&lt;/font&gt;&lt;/a&gt;. These people seem to install HRV systems, and aren't tied to a particular brand, so difficult to assess. 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.vent-axia.com/products/vacas/airminder.asp" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;http://www.vent-axia.com/products/vacas/airminder.asp&lt;/font&gt;&lt;/a&gt; - &lt;a href="http://www.greenbuildingforum.co.uk/forum/index2.php?DATEIN=tpc_pcrzdkdsa_1164561340&amp;amp;showpage=1" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Useful conversation&lt;/font&gt;&lt;/a&gt; - use low friction ducting, allows a low energy motor.&lt;/li&gt;
+&lt;li&gt;I'm now leaning towards the idea of single room heat recovery ventilation. It's simpler, and easier to maintain. Products are:&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://www.kiltox.co.uk/khrv150eco.htm" rel="nofollow"&gt;http://www.kiltox.co.uk/khrv150eco.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;http://www.insulation.kingspan.com/uk/literature.htm&lt;/li&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;It seems a good idea to use &lt;a href="http://en.wikipedia.org/wiki/Earth_cooling_tubes" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;Earth Cooling Pipes&lt;/font&gt;&lt;/a&gt; to pre-heat the air for the HRV. 
+&lt;/li&gt;
+
+&lt;li&gt;At the moment I burn gas in my house for space heating and water heating. I'd like to stop this as it produces CO2. I've got a number of options: 
+&lt;ul&gt;
+&lt;li&gt;Use electricity directly to heat the space and the water. This has a low initial cost, but high running costs. It may well cause more CO2 emissions, even though it's 'green' electricity. This is because of difficulty about where the greenness of electricity lies. 
+&lt;/li&gt;
+&lt;li&gt;Use a &lt;a href="http://en.wikipedia.org/wiki/Geothermal_exchange_heat_pump" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="+0"&gt;ground source heat pump&lt;/font&gt;&lt;/a&gt;. This means that for every unit of electrical energy, I get 3 units of heat energy out. This has a high initial cost (~£12,000), but lower running costs. 
+&lt;/li&gt;
+&lt;li&gt;People keep telling me that a solar water heater on the roof is a good idea. 
+&lt;/li&gt;
+&lt;li&gt;Emily said do these things: 
+&lt;ul&gt;
+&lt;li&gt;Do you have cavity wall insulation? 
+&lt;/li&gt;
+&lt;li&gt;Do you have thick loft insulation? 
+&lt;/li&gt;
+&lt;li&gt;Do you have draught proofing in the house?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I'm pretty sure I've got cavity wall insulation. I've got a room in my loft, but the sides could probably do with insulating a bit more. Draught proofing: I kind of don't want to make the house too stuffy. I need some sort of heat recovery system where fresh cold incoming air is heated by stale hot outgoing air. 
+&lt;/li&gt;
+&lt;li&gt;Worcester do interesting &lt;a href="http://www.worcester-bosch.co.uk/index.php?fuseaction=product.range&amp;amp;con_id=128022&amp;amp;from_id=128022" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;heat pumps and solar water heating&lt;/font&gt;&lt;/a&gt; (combined) . Worcester say ok to use softened water for hot water, but not in the closed system. Ok to use with solar heating, not sure about groundsource. 
+&lt;/li&gt;
+&lt;li&gt;Look at the PassivHaus standard.&lt;/li&gt;
+&lt;li&gt;Good Energy seem to think that the &lt;a href="http://www.goodenergyshop.co.uk/details.asp?id=88" rel="nofollow"&gt;Shuco Solar Thermal panel&lt;/a&gt; is a good idea.&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Insulating wall. Someone wrote: 
+&lt;blockquote&gt;Internally ... if you have room, try glued-on 100mm Kingspan slabs ("seconds" are available at 20% of the normal price and thirds at 2-3%) then Carlite bonding plaster, painted as required. To hang shelves you'll need a more robust variant. Note the extreme risk of thermal bridging/condensation at masonry cross walls and follow the German advice in order to reduce it.&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Hemp lime. &lt;a href="http://www.lhoist.co.uk/tradical/hemp-lime.html#TRADCONS" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;http://www.lhoist.co.uk/tradical/hemp-lime.html#TRADCONS&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://mailengine.virtualcontact.co.uk/clicktracker.php?cd=7433&amp;amp;ld=27&amp;amp;md=29&amp;amp;ud=e657ae8ebc0abf5f9cf8dd916f00047a&amp;amp;url=http://www.goodenergyshop.co.uk/details.asp%3FParentID=%26CSS=All%26id=57%26utm_source=10%25newsletter%26utm_medium=email%26utm_term=October%26utm_campaign=Heatkeeper%2BPromo" rel="nofollow" target="_blank" title="Heatkeeper"&gt;Heatkeeper Radiator Insulation Pack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Have a look at the house using an infra-red camera.&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content></entry><entry><title>Public Transport 2.0</title><link href="/pt20.html" rel="alternate"></link><published>2008-03-07T00:00:00+00:00</published><updated>2008-03-07T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-07:/pt20.html</id><summary type="html">&lt;div&gt;What follows is a business idea that you can start implementing today. Please get in touch if you'd like my help to get it going. I can do the computery bits but I'd be out of my depth doing the rest.&lt;br&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;The current situation&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+Where I live in the UK …&lt;/p&gt;</summary><content type="html">&lt;div&gt;What follows is a business idea that you can start implementing today. Please get in touch if you'd like my help to get it going. I can do the computery bits but I'd be out of my depth doing the rest.&lt;br&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;The current situation&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+Where I live in the UK, in a town called Trowbridge, the only type of public transport that works are taxis. The problem is that they're costly, they pollute, and they cause traffic congestion. Here's a table of all the forms of public transport and their qualities. The last row is my proposed solution.&lt;br&gt;
+&lt;br&gt;
+&lt;table align="bottom" cellpadding="3" width="100%"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Type of transport&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Cost&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Pollution&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Traffic Congestion&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Convenience&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Comfort&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Speed&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Customer Service&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;td width="11%"&gt;&lt;b&gt;Reliability&lt;/b&gt;&lt;br&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="11%"&gt;Taxi&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;Very good&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="11%"&gt;Bus&lt;/td&gt;
+&lt;td width="11%"&gt;Medium&lt;/td&gt;
+&lt;td width="11%"&gt;Low&lt;/td&gt;
+&lt;td width="11%"&gt;Low&lt;/td&gt;
+&lt;td width="11%"&gt;Very bad&lt;/td&gt;
+&lt;td width="11%"&gt;Poor&lt;/td&gt;
+&lt;td width="11%"&gt;Low&lt;/td&gt;
+&lt;td width="11%"&gt;Poor&lt;/td&gt;
+&lt;td width="11%"&gt;Very poor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="11%"&gt;Train&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;Low&lt;/td&gt;
+&lt;td width="11%"&gt;None&lt;/td&gt;
+&lt;td width="11%"&gt;Bad&lt;/td&gt;
+&lt;td width="11%"&gt;Very Good&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;Poor&lt;/td&gt;
+&lt;td width="11%"&gt;Poor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="11%"&gt;PT2&lt;/td&gt;
+&lt;td width="11%"&gt;Medium&lt;/td&gt;
+&lt;td width="11%"&gt;Low&lt;/td&gt;
+&lt;td width="11%"&gt;Low&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;td width="11%"&gt;High&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;td width="11%"&gt;Good&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;The solution&lt;/h3&gt;
+&lt;br&gt;
+Modern mobile phones have GPS built-in to them, so they always know where they are. If I want to travel somewhere, I pick up my phone and click on the map where I want to go. The system (let's call it Public Transport 2.0 or PT2) then knows where I am and where I want to go. PT2 also knows the location of the all the vehicles at its disposal, and where all the other passengers are and where they want to go. Every few seconds it performs an optimization to get everyone to their destination in the shortest possible time.&lt;br&gt;
+&lt;br&gt;
+For example it may tell me to start walking if I want to, and display an arrow showing which direction to walk in. Simultaneously it may tell a minibus that's about to pass by, to pick me up. The minibus may take me to the town I want to go to, and a car would be waiting to take me to the particular address.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Payment&lt;/h3&gt;
+&lt;br&gt;
+It always annoys me when my bus journey is slowed down by people having to pay the driver as they board. With PT2 you'd charge your account in advance and then it would be automatically debited as you travel, like a pay-as-you-go phone.&lt;br&gt;
+&lt;br&gt;
+But how would the vehicles get paid? They'd get paid a standard amount per passenger km, depending on the number of seats in their vehicle.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Quality control&lt;/h3&gt;
+&lt;br&gt;
+It's important that the vehicles are clean and comfortable, and that the driver is courteous. Each passenger could give feedback via their mobile, and reports would be investigated by PT2 staff. Poor quality would be punished with a fine, and good quality rewarded with a bonus.&lt;/p&gt;</content></entry><entry><title>Matter and Information</title><link href="/matter-and-information.html" rel="alternate"></link><published>2008-03-06T00:00:00+00:00</published><updated>2008-03-06T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-06:/matter-and-information.html</id><summary type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;div&gt;Here are two lists:&lt;br&gt;
+&lt;h2&gt;Matter&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cars 
+&lt;/li&gt;
+&lt;li&gt;Houses 
+&lt;/li&gt;
+&lt;li&gt;Food 
+&lt;/li&gt;
+&lt;li&gt;Electricity 
+&lt;/li&gt;
+&lt;li&gt;Clothes&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Software 
+&lt;/li&gt;
+&lt;li&gt;Music 
+&lt;/li&gt;
+&lt;li&gt;Books 
+&lt;/li&gt;
+&lt;li&gt;Encyclopeadias 
+&lt;/li&gt;
+&lt;li&gt;News&lt;/li&gt;&lt;/ul&gt;
+I think that everything in the economy can fit into these two categories of Matter and Information.&lt;br&gt;
+&lt;h2&gt;Cost of copying&lt;/h2&gt;
+If an item can be copied perfectly with near-zero cost, it's information, otherwise it …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div style="CLEAR:both"&gt;
+&lt;div&gt;
+&lt;div&gt;Here are two lists:&lt;br&gt;
+&lt;h2&gt;Matter&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cars 
+&lt;/li&gt;
+&lt;li&gt;Houses 
+&lt;/li&gt;
+&lt;li&gt;Food 
+&lt;/li&gt;
+&lt;li&gt;Electricity 
+&lt;/li&gt;
+&lt;li&gt;Clothes&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Software 
+&lt;/li&gt;
+&lt;li&gt;Music 
+&lt;/li&gt;
+&lt;li&gt;Books 
+&lt;/li&gt;
+&lt;li&gt;Encyclopeadias 
+&lt;/li&gt;
+&lt;li&gt;News&lt;/li&gt;&lt;/ul&gt;
+I think that everything in the economy can fit into these two categories of Matter and Information.&lt;br&gt;
+&lt;h2&gt;Cost of copying&lt;/h2&gt;
+If an item can be copied perfectly with near-zero cost, it's information, otherwise it belongs in the matter realm.&lt;br&gt;
+&lt;h2&gt;Wealth&lt;/h2&gt;
+The wealth of a person, country, organization etc. is the sum of matter they have and all the Information in the world. Hold on, surely the wealthiest person is the one with most money? This is true for any moment in time because all information is available to everyone, so matter is only thing that varies. But compare a king from 1,000 years ago to a regular citizen these days. The king would be the wealthiest person, owning an entire country. The regular citizen of today may own a house, car and a few other things. However, if they both were unfortunate enough to suffer from tooth ache, today's citizen would be better off. The difference is information.&lt;br&gt;
+&lt;h2&gt;Changing categories&lt;/h2&gt;
+As technology progresses, items move from Matter to Information. For example, if I wanted to find out about glass I would have had to buy an encyclopeadia. Now I go to Wikipedia.&lt;br&gt;
+&lt;h2&gt;Ownership&lt;/h2&gt;
+Things in the Matter category can be owned, but ownership doesn't work for items in the Information category.&lt;/div&gt;
+&lt;/div&gt;</content></entry><entry><title>Intend To Read</title><link href="/intend-to-read.html" rel="alternate"></link><published>2008-03-05T00:00:00+00:00</published><updated>2008-03-05T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-05:/intend-to-read.html</id><summary type="html">&lt;div style="clear:both"&gt;
+&lt;div&gt;These are books and films I intend to read. Also see &lt;a href="http://blog.tlocke.org.uk/search/label/book-review" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;unfocussed reviews&lt;/font&gt;&lt;/a&gt;. 
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Alan_Clark_Diaries" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;Alan Clark Diaries&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gutenberg.org/etext/2680" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;Marcus Aurelius - Meditations&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/A_Dance_to_the_Music_of_Time" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;A Dance to the music of time&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Norman Mailer 
+&lt;/li&gt;
+&lt;li&gt;John Updike 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/The_Tipping_Point_%28book%29" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;http://en.wikipedia.org/wiki/The_Tipping_Point_%28book%29&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Age of Consent: A Manifesto for a New World Order - George …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div style="clear:both"&gt;
+&lt;div&gt;These are books and films I intend to read. Also see &lt;a href="http://blog.tlocke.org.uk/search/label/book-review" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1"&gt;unfocussed reviews&lt;/font&gt;&lt;/a&gt;. 
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Alan_Clark_Diaries" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;Alan Clark Diaries&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gutenberg.org/etext/2680" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;Marcus Aurelius - Meditations&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/A_Dance_to_the_Music_of_Time" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;A Dance to the music of time&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Norman Mailer 
+&lt;/li&gt;
+&lt;li&gt;John Updike 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/The_Tipping_Point_%28book%29" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;http://en.wikipedia.org/wiki/The_Tipping_Point_%28book%29&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Age of Consent: A Manifesto for a New World Order - George Monbiot 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Voice_of_the_Fire" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;http://en.wikipedia.org/wiki/Voice_of_the_Fire&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;One flew over the Cuckoo's nest 
+&lt;/li&gt;
+&lt;li&gt;Patch Adams 
+&lt;/li&gt;
+&lt;li&gt;The Long Tail 
+&lt;/li&gt;
+&lt;li&gt;Emile Zola, Germinal 
+&lt;/li&gt;
+&lt;li&gt;The testament of Gideon mack 
+&lt;/li&gt;
+&lt;li&gt;The Complete Roderick - John Sladek 
+&lt;/li&gt;
+&lt;li&gt;Audit of War - Correlli Barnett 
+&lt;/li&gt;
+&lt;li&gt;The Ingenuity Gap - Thomas Homer-Dixon 
+&lt;/li&gt;
+&lt;li&gt;Mastering the Dynamics of Innovation - James Utterback 
+&lt;/li&gt;
+&lt;li&gt;Amory Lovins 
+&lt;/li&gt;
+
+&lt;li&gt;The Road to Reality&lt;/li&gt;
+&lt;li&gt;Dreaming in Code - Scott Rosenberg&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Rameau%27s_Nephew" rel="nofollow"&gt;Rameau's Nephew&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Prime of Miss Jean Brodie, Muriel Spark&lt;/li&gt;
+&lt;li&gt;Frannie and Zooey, J.D. Salinger&lt;/li&gt;
+&lt;li&gt;Moliere.&lt;/li&gt;
+&lt;li&gt;Animal Farm&lt;/li&gt;
+&lt;li&gt;The Outsider&lt;/li&gt;
+&lt;li&gt;Robert Heinlein's Stranger In A Strange Land&lt;/li&gt;
+&lt;li&gt;For nephews:&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;Carle&lt;/li&gt;
+&lt;li&gt;Kipling&lt;/li&gt;
+&lt;li&gt;Dahl&lt;/li&gt;
+&lt;li&gt;Tolkien&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;http://greenteapress.com/compmod/html/index.html recommended by http://hackershelf.com/&lt;/li&gt;
+&lt;li&gt;The Island Of Dr Moreau&lt;/li&gt;
+&lt;li&gt;Shadow of the Wind, recommended by Tristan.&lt;/li&gt;
+&lt;li&gt;Ackroyd on Hawksmoor, recommended by Zoe.&lt;/li&gt;
+&lt;li&gt;No Country For Old Men&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Films&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tony Hancock - &lt;a href="http://en.wikipedia.org/wiki/The_Rebel_%281961_movie%29" rel="nofollow" target="_blank"&gt;&lt;font color="#497fb1" size="-0"&gt;The Rebel&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Napolean Dynamite &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;V For Vendetta &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Electric Dreams 
+&lt;/li&gt;
+&lt;li&gt;Logan's Run 
+&lt;/li&gt;
+&lt;li&gt;Westworld 
+&lt;/li&gt;
+&lt;li&gt;On the Waterfront - 1954 
+&lt;/li&gt;
+&lt;li&gt;Saturday Night / Sunday Morning - 1960 
+&lt;/li&gt;
+&lt;li&gt;Being There - 1960 
+&lt;/li&gt;
+&lt;li&gt;Things to Come - 1936 
+&lt;/li&gt;
+
+&lt;li&gt;Triumph of the Will - 1936 
+&lt;/li&gt;
+&lt;li&gt;Claire's Knee - 1970 
+&lt;/li&gt;
+&lt;li&gt;Zero de Conduite - 1933 
+&lt;/li&gt;
+&lt;li&gt;Tunes of Glory - 1960 
+&lt;/li&gt;
+&lt;li&gt;The Great Race - 1965&lt;/li&gt;
+&lt;li&gt;I'm alright Jack - 1959 
+&lt;/li&gt;
+&lt;li&gt;The Ploughman's Lunch - 1983 
+&lt;/li&gt;
+&lt;li&gt;Dr Strangelove - 1963&lt;/li&gt;
+
+&lt;li&gt;Solaris - 1972 
+&lt;/li&gt;
+&lt;li&gt;Mash - 1970 
+&lt;/li&gt;
+&lt;li&gt;Kind Hearts and Coronets - 1949 
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;
+
+
+
+&lt;div&gt;
+
+
+&lt;div&gt;&lt;font face="Arial" size="2"&gt;http://www.zeitgeistmovie.com/&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; http://video.google.com/videoplay?docid=7065205277695921912&lt;/font&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;There's something about Mary.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;Frost / Nixon.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;When Harry Met Sally&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;There Will Be Blood&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;Woody Allen - Bananas.&lt;br&gt;
+&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;The Road&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;Tremors&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font face="Arial" size="2"&gt;Julia recommends Arctic Blast.&lt;br&gt;
+&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;Century of the self.&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content></entry><entry><title>Book Reviews</title><link href="/book-reviews.html" rel="alternate"></link><published>2008-03-04T00:00:00+00:00</published><updated>2008-03-04T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-04:/book-reviews.html</id><summary type="html">&lt;p&gt;
+  The links below don't work. I've left them there as a reminder of how bad
+  the web can be. Yahoo deleted my account and all my posts were lost. A
+  salutory lesson.
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://uk.blog.360.yahoo.com/blog-n8mQdaMld6nzBHpvRQIs7zE-?cq=1&amp;amp;p=32"&gt;Heat, George Monbiot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D28&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzcBTRs2QYMyRe2M1A_dTn88rFjwrg"&gt;Wasp, Eric Frank Russell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D27&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzd8Zim1m2bcl3iC2HmKq2uYqhr7qA"&gt;Middlemarch, George Eliot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D25&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzeWlOZRGnYISUEdrEyPssFCn3S0xw"&gt;Airframe, Michael Crichton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D24&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEze8HLDFkxvf5D9RWQ-f4kfuBMCONw" rel="nofollow"&gt;Karl Marx, Francis Wheen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D22&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzd1lfZ0kGhezi89-AI9crHCyDpsvw" rel="nofollow"&gt;Prey …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;
+  The links below don't work. I've left them there as a reminder of how bad
+  the web can be. Yahoo deleted my account and all my posts were lost. A
+  salutory lesson.
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://uk.blog.360.yahoo.com/blog-n8mQdaMld6nzBHpvRQIs7zE-?cq=1&amp;amp;p=32"&gt;Heat, George Monbiot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D28&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzcBTRs2QYMyRe2M1A_dTn88rFjwrg"&gt;Wasp, Eric Frank Russell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D27&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzd8Zim1m2bcl3iC2HmKq2uYqhr7qA"&gt;Middlemarch, George Eliot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D25&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzeWlOZRGnYISUEdrEyPssFCn3S0xw"&gt;Airframe, Michael Crichton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D24&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEze8HLDFkxvf5D9RWQ-f4kfuBMCONw" rel="nofollow"&gt;Karl Marx, Francis Wheen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D22&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzd1lfZ0kGhezi89-AI9crHCyDpsvw" rel="nofollow"&gt;Prey, Michael Crichton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D22&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzd1lfZ0kGhezi89-AI9crHCyDpsvw" rel="nofollow"&gt;Notes on a scandal, Zoe Heller&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D20&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzdI5rxNYYFHWPm0Dg22nICC_u-pVQ" rel="nofollow"&gt;The Master &amp;amp; Margarita, Mikhail Bulgakov&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D15&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzdl7gBKv2LoVSasJSVDB8b3Wx-NBA" rel="nofollow"&gt;Mary Renault's, 'The Praise Singer'&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D15&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzdl7gBKv2LoVSasJSVDB8b3Wx-NBA" rel="nofollow"&gt;The Da Vinci Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D5&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEze602bcWByqWCI64KtjV67A7n6R0g" rel="nofollow"&gt;Evelyn Waugh's Decline and Fall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.google.com/url?q=http%3A%2F%2Fuk.blog.360.yahoo.com%2Fblog-n8mQdaMld6nzBHpvRQIs7zE-%3Fcq%3D1%26p%3D2&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFrqEzeoP6GVzEt_uJqDB4zYYi5hi3MA8Q" rel="nofollow"&gt;The Fabric of Reality, David Deutsch &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2006-05-06: The Mandala of Sherlock Holmes - Jamyang Norbu&lt;/li&gt;
+&lt;li&gt;2006-05-06: Portnoy's complaint - Philip Roth&lt;/li&gt;
+&lt;li&gt;2006-05-06: Breaking Down the Wall of Silence - Alice Miller &lt;/li&gt;
+&lt;li&gt;2006-04-29: Catcher in the Rye - J.D.Salinger&lt;/li&gt;
+&lt;li&gt;2006-04-29: Atonement - Ian McEwen&lt;/li&gt;
+&lt;li&gt;2006-04-29: Anthem - Ayn Rand&lt;/li&gt;
+&lt;li&gt;2006-04-23: Small World - David Lodge&lt;/li&gt;
+&lt;li&gt;2006-04-23: Changing places - David Lodge &lt;/li&gt;
+&lt;li&gt;2006-04-23: Too beautiful for you - Rod Liddle &lt;/li&gt;
+&lt;li&gt;2006-04-02: The House of Sleep - Jonathan Coe &lt;/li&gt;
+&lt;li&gt;2006-04-02: More die of heartbreak - Saul Bellow &lt;/li&gt;
+&lt;li&gt;2006-04-02: Majestic - Whitley Strieber &lt;/li&gt;
+&lt;li&gt;2006-04-02: The legacy of Reginal Perrin - David Nobbs&lt;/li&gt;
+&lt;li&gt;2006-02-17: Fences and Windows - Naomi Klein&lt;/li&gt;
+&lt;li&gt;2005-12-11: Ravelstein - Saul Bellow&lt;/li&gt;
+&lt;li&gt;2005-10-22: Almayer's Folly - Joseph Conrad&lt;/li&gt;
+&lt;li&gt;2005-10-22: The Stars' Tennis Balls - Stephen Fry&lt;/li&gt;
+&lt;li&gt;2005-09-28: Skinny Dip - Carl Hiassen&lt;/li&gt;
+&lt;li&gt;2005-09-28: How the Mind Works - Steven Pinker&lt;/li&gt;
+&lt;li&gt;2005-08-31: Down and out in Paris and London - George Orwell&lt;/li&gt;
+&lt;li&gt;2005-08-26: Heart of Darkness - Joseph Conrad&lt;/li&gt;
+&lt;li&gt;2005-07-13: Dead Air - Iain Banks&lt;/li&gt;
+&lt;li&gt;2005-07-13: The Great Gatsby - F. Scott Fitzgerald&lt;/li&gt;
+&lt;li&gt;2005-07-01: Yellow Crome - Aldous Huxley&lt;/li&gt;
+&lt;li&gt;2005-06-26: Everything you know - Zoe Heller&lt;/li&gt;
+&lt;li&gt;2005-06-26: The beautiful and damned - F. Scott Fitzgerald&lt;/li&gt;
+&lt;li&gt;2005-06-03: The Curious Incident of the WMD in Iraq. - Rohan Candappa&lt;/li&gt;
+&lt;li&gt;2005-06-03: Growth Fetish - Clive Hamilton&lt;/li&gt;
+&lt;li&gt;2005-04-15: Easily Led - Oliver Thomson&lt;/li&gt;
+&lt;li&gt;2005-02-28: Crime and punishment - Fyodor Dostoevsky&lt;/li&gt;
+&lt;li&gt;2005-01-23: Lord of the flies - William Golding&lt;/li&gt;
+&lt;li&gt;2005-01-23: Finnegans Wake - James Joyce&lt;/li&gt;
+&lt;li&gt;2004-08-28: Life after God - Douglas Coupland&lt;/li&gt;
+&lt;li&gt;2004-08-21: Espedair Street - Iain Banks&lt;/li&gt;
+&lt;li&gt;2004-08-18: Harlequin - Bernard Cornwell &lt;/li&gt;
+&lt;li&gt;2004-08-13: Cocaine Nights - JG Ballard &lt;/li&gt;
+&lt;li&gt;2004-08-01: Rebecca - Daphne du Maurier &lt;/li&gt;
+&lt;li&gt;2004-07-20: Space - Stephen Baxter &lt;/li&gt;
+&lt;li&gt;2004-07-10: The Remains of the Day - Kazuo Ishiguro &lt;/li&gt;
+&lt;li&gt;2004-06-30: The Bridge - Iain Banks &lt;/li&gt;
+&lt;li&gt;2004-06-04: The Idiot - Fyodor Dostoevsky &lt;/li&gt;
+&lt;li&gt;2004-05-20: War and Peace - Leo Tolstoy &lt;/li&gt;
+&lt;li&gt;2004-02-10: The Island of the Day Before - Umberto Eco &lt;/li&gt;
+&lt;li&gt;2003-12-20: When we were orphans - Kazuo Ishiguro &lt;/li&gt;
+&lt;li&gt;2003-12-11: Complicity - Iain Banks &lt;/li&gt;
+&lt;li&gt;The kindness of women - J. G. Ballard &lt;/li&gt;
+&lt;li&gt;The Eternal Husband (and other stories) - Fyodor Dostoevsky &lt;/li&gt;
+&lt;li&gt;Dark Nature - Lyall Watson &lt;/li&gt;
+&lt;li&gt;Primary Colors - Joe Klein &lt;/li&gt;
+&lt;li&gt;Demons - Fyodor Dostoevsky &lt;/li&gt;
+&lt;li&gt;Anna Karenina - Leo Tolstoy&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Films&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;As good as it gets. &lt;/li&gt;
+&lt;li&gt;The last king of scotland. &lt;/li&gt;
+&lt;li&gt;Seventh Seal &lt;/li&gt;&lt;/ul&gt;</content></entry><entry><title>Linux Commands - An aide memoir</title><link href="/linux-commands-an-aide-memoir.html" rel="alternate"></link><published>2008-03-03T00:00:00+00:00</published><updated>2008-03-03T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-03:/linux-commands-an-aide-memoir.html</id><summary type="html">&lt;p&gt;&lt;code&gt;fmt -w 50 -s message.txt &amp;gt; message-short.txt&lt;/code&gt;
+&lt;p&gt;Add in line breaks so that no line is longer than 50 characters.&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;code&gt;fmt -w 50 -s message.txt &amp;gt; message-short.txt&lt;/code&gt;
+&lt;p&gt;Add in line breaks so that no line is longer than 50 characters.&lt;/p&gt;&lt;/p&gt;</content></entry><entry><title>Web Apps</title><link href="/web-apps.html" rel="alternate"></link><published>2008-03-02T00:00:00+00:00</published><updated>2008-03-02T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-02:/web-apps.html</id><summary type="html">&lt;p&gt;This is how I'd like various web apps to work.&lt;/p&gt;
+
+&lt;h3&gt;Common&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Should support &lt;a href="http://en.wikipedia.org/wiki/OpenID"&gt;OpenId&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Wiki&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The URLs to the pages would be constructed in accordance with &lt;a href="https://sites.google.com/a/tlocke.org.uk/tlocke/4"&gt;DesigningURLs&lt;/a&gt;. Each page would be assigned a serial number. This number would never change. There would be no renaming of URLs.&lt;/li&gt;
+&lt;li&gt;It should be …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This is how I'd like various web apps to work.&lt;/p&gt;
+
+&lt;h3&gt;Common&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Should support &lt;a href="http://en.wikipedia.org/wiki/OpenID"&gt;OpenId&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Wiki&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The URLs to the pages would be constructed in accordance with &lt;a href="https://sites.google.com/a/tlocke.org.uk/tlocke/4"&gt;DesigningURLs&lt;/a&gt;. Each page would be assigned a serial number. This number would never change. There would be no renaming of URLs.&lt;/li&gt;
+&lt;li&gt;It should be possible to edit the raw HTML.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Bookmarking&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When a new URL is added, the default title should be the title found in the markup (&amp;lt;title&amp;gt; element in HTML)&lt;/li&gt;
+&lt;li&gt;Clicking on a link should open it in a new tab&lt;/li&gt;&lt;/ul&gt;</content></entry><entry><title>XSL and JavaScript</title><link href="/xsl-and-javascript.html" rel="alternate"></link><published>2008-03-01T00:00:00+00:00</published><updated>2008-03-01T00:00:00+00:00</updated><author><name>Tony Locke</name></author><id>tag:None,2008-03-01:/xsl-and-javascript.html</id><summary type="html">&lt;p&gt;To get an XSL stylesheet to output XML with JavaScript in it, do this:&lt;/p&gt;
+
+&lt;pre&gt;&amp;lt;?xml version="1.0" encoding="us-ascii"?&amp;gt;
+&amp;lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&amp;gt;
+    &amp;lt;xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.1//EN"
+        doctype-system="http://www.w3.org …&lt;/pre&gt;</summary><content type="html">&lt;p&gt;To get an XSL stylesheet to output XML with JavaScript in it, do this:&lt;/p&gt;
+
+&lt;pre&gt;&amp;lt;?xml version="1.0" encoding="us-ascii"?&amp;gt;
+&amp;lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&amp;gt;
+    &amp;lt;xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.1//EN"
+        doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+        cdata-section-elements="javascript-escape" /&amp;gt;
+    &amp;lt;xsl:template match="/"&amp;gt;
+        &amp;lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&amp;gt;
+            &amp;lt;head&amp;gt;
+                &amp;lt;title&amp;gt;The Marriage of XSL and JavaScript&amp;lt;/title&amp;gt;
+                &amp;lt;script type="text/javascript"&amp;gt;
+                    /* &amp;lt;javascript-escape&amp;gt; &amp;lt;![CDATA[ */
+                    function load() {
+                        alert("All your bases are belong to us.");
+                    }
+                    /* ]]&amp;gt; &amp;lt;/javascript-escape&amp;gt; */
+                &amp;lt;/script&amp;gt;
+            &amp;lt;/head&amp;gt;
+            &amp;lt;body onload="load()"&amp;gt;
+                &amp;lt;p&amp;gt;Captain: You know what you doing.&amp;lt;/p&amp;gt;
+            &amp;lt;/body&amp;gt;
+        &amp;lt;/html&amp;gt;
+    &amp;lt;/xsl:template&amp;gt;
+&amp;lt;/xsl:stylesheet&amp;gt;&lt;/pre&gt;</content></entry></feed>

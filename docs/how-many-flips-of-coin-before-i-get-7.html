@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <title>Tony Locke - How many flips of a coin before I get 7 heads in a row?</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/theme/css/main.css" />
-    <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+  <head>
+        <title>Tony Locke - How many flips of a coin before I get 7 heads in a row?</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
 
 
 
 
 
-</head>
+  </head>
 
-<body id="index" class="home">
+  <body id="index" class="home">
     <header id="banner" class="body">
     </header><!-- /#banner -->
-    <nav id="menu"><ul>
-        <li><a href="/">Tony Locke</a></li>
-          
-        <li><a href="/archives.html">Archive</a></li>
-        <li><a href="http://twitter.com/t_locke">Twitter</a></li>
-        <li><a href="https://github.com/tlocke">GitHub</a></li>
-    </ul></nav><!-- /#menu -->
+    <nav id="menu">
+      <ul>
+          <li><a href="/">Tony Locke</a></li>
+
+            <li><a href="/archives.html">Archive</a></li>
+            <li><a href="http://twitter.com/t_locke">Twitter</a></li>
+            <li><a href="https://github.com/tlocke">GitHub</a></li>
+      </ul>
+    </nav><!-- /#menu -->
 <section id="content" class="body">
   <header>
-    <h2 class="entry-title">How many flips of a coin before I get 7 heads in a row?</h2>
+    <h2 class="entry-title">
+      How many flips of a coin before I get 7 heads in a row?
+    </h2>
  
   </header>
   <footer class="post-info">
@@ -61,26 +66,26 @@ HTT  </p>
 <p>Say the nth term of a kth order fibonacci sequence is fib(k, n), then the probability of getting k heads in n flips is:  </p>
 <p>1 - fib(k, n) / 2\^n  </p>
 <p>There's probably some fancy way of working this out, but I wrote a Python 3.6 programme to do it:  </p>
-<div class="highlight"><pre><span></span>prob = 0
-NUM_IN_A_ROW = 7
+<div class="highlight"><pre><span></span><code><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="n">NUM_IN_A_ROW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="w"></span>
 
-while prob &lt; 0.5:
-    first_key, first_val = sorted(stream.items())[0]
-    for v in range(NUM_IN_A_ROW):
-        stream[first_key + v + 1] += first_val
-    prob = 1 - stream[first_key + 1] / 2 ** first_key
-    print(
-        &quot;After &quot; + str(first_key) + &quot; flips the probability of getting &quot; +
-        str(NUM_IN_A_ROW) + &quot; in a row is &quot; + str(prob))
-    del stream[first_key]
-</pre></div>
+<span class="k">while</span><span class="w"> </span><span class="n">prob</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.5</span><span class="err">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">first_key</span><span class="p">,</span><span class="w"> </span><span class="n">first_val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted</span><span class="p">(</span><span class="n">stream</span><span class="p">.</span><span class="n">items</span><span class="p">())</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key + v + 1</span><span class="o">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">first_val</span><span class="w"></span>
+<span class="w">    </span><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key + 1</span><span class="o">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">first_key</span><span class="w"></span>
+<span class="w">    </span><span class="k">print</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;After &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">first_key</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">&quot; flips the probability of getting &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
+<span class="w">        </span><span class="nf">str</span><span class="p">(</span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">&quot; in a row is &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">prob</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="n">del</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
 
 
 <p>Running this gives: <code>After 178 flips the probability of getting 7 in a row is 0.5014494277755364</code>. So my answer is 178!  </p>
 <p>Any corrections and comments welcome :-)  </p>
 <h4>Update 2018-04-08</h4>
 <p>Having thought about the maths again, I think the Python can be written in a better way, and the <a href="https://docs.python.org/3/library/collections.html#collections.deque">deque</a> data structure is well suited to finding n-order fibonacci sequences. So here's my second attempt, and reassuringly it comes out with the same answer.  </p>
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">count</span>
 
 
@@ -98,12 +103,16 @@ while prob &lt; 0.5:
     <span class="k">if</span> <span class="n">prob</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="n">tot</span> <span class="o">*=</span> <span class="mi">2</span>
-</pre></div>
+</code></pre></div>
   </div><!-- /.entry-content -->
 </section>
     <br>
     <footer id="contentinfo" class="body">
-      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/theme/images/icons/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     </footer><!-- /#contentinfo -->
-</body>
+  </body>
 </html>

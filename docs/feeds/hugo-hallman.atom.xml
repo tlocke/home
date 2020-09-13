@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tony Locke - Hugo Hallman</title><link href="/" rel="alternate"></link><link href="https://www.tlocke.org.uk/feeds/hugo-hallman.atom.xml" rel="self"></link><id>/</id><updated>2007-11-08T10:57:00+00:00</updated><entry><title>Dear Tony,I would like to see a clear explanat...</title><link href="/post-1326713262825130258.html" rel="alternate"></link><published>2007-11-08T10:57:00+00:00</published><updated>2007-11-08T10:57:00+00:00</updated><author><name>Hugo Hallman</name></author><id>tag:None,2007-11-08:/post-1326713262825130258.html</id><summary type="html">&lt;p&gt;Dear Tony,&lt;br&gt;
+I would like to see a clear explanation about security. Now I can only assume that the id works by me "claiming" the id before anyone else does so.&lt;br&gt;
+There also doesn't seem to be a procedure to reclaim an id if I get a problem with my …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dear Tony,&lt;br&gt;
+I would like to see a clear explanation about security. Now I can only assume that the id works by me "claiming" the id before anyone else does so.&lt;br&gt;
+There also doesn't seem to be a procedure to reclaim an id if I get a problem with my provider. This would leave me with no choice but to repoint my CNAME to another delegator service.&lt;br&gt;
+Finally a privacy statement would also be good, since I suppose the administrators of own-id could in theory hijack my id.&lt;/p&gt;</content></entry></feed>

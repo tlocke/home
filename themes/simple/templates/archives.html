@@ -3,7 +3,6 @@
 {% block title %}{{ SITENAME }} - Archives{% endblock %}
 
 {% block content %}
-  <h1>Archives for {{ SITENAME }}</h1>
 
   <ul>
     {% for year in range(dates[0].date.year, dates[-1].date.year -1, -1) %}

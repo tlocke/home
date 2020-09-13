@@ -26,7 +26,7 @@ LINKS = None
 SOCIAL = None
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ('Archive', '/archives.html'),
     ('Twitter', 'http://twitter.com/t_locke'),
@@ -47,3 +47,5 @@ DIRECT_TEMPLATES = (
 
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
+
+READERS = {'html': None}
