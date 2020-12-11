@@ -26,6 +26,25 @@
           <article class="hentry">
             <header>
               <h2 class="entry-title">
+                <a href="/cocktail.html" rel="bookmark" title="Permalink to Cocktail">Cocktail</a>
+              </h2>
+            </header>
+            <footer class="post-info">
+              <time class="published" datetime="2009-10-04T13:26:00+01:00"> Sun 04 October 2009 </time>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <p><img alt="Cocktail" src="/images/2009/2009-07-25_20_47_27.jpg">  </p>
+<p>Ages ago, Andy made a cocktail, with me choosing the ingredients, this was the result. Fantabulous!</p>
+              <a class="readmore" href="/cocktail.html">
+                read more
+              </a>
+            </div><!-- /.entry-content -->
+          </article>
+        </li>
+        <li>
+          <article class="hentry">
+            <header>
+              <h2 class="entry-title">
                 <a href="/polifesto-17.html" rel="bookmark" title="Permalink to Polifesto 17">Polifesto 17</a>
               </h2>
             </header>
@@ -190,38 +209,6 @@ At times in the book I thought, '<a href="http://twitter.com/t_locke/status/3598
             <div class="entry-content">
               <p>I don't understand <a href="http://en.wikipedia.org/wiki/Formal_methods">formal methods</a>. A group has <a href="http://ertos.nicta.com.au/research/l4.verified/">claimed to have formally verified</a> the <a href="http://en.wikipedia.org/wiki/L4_microkernel_family">L4 kernel</a>. What does this mean? I suppose that this means that specification of the kernel has been written as a mathematical proof. Then it must have been demonstrated that the C code exactly matched the …</p>
               <a class="readmore" href="/formal-methods.html">
-                read more
-              </a>
-            </div><!-- /.entry-content -->
-          </article>
-        </li>
-        <li>
-          <article class="hentry">
-            <header>
-              <h2 class="entry-title">
-                <a href="/lisp.html" rel="bookmark" title="Permalink to Lisp">Lisp</a>
-              </h2>
-            </header>
-            <footer class="post-info">
-              <time class="published" datetime="2009-08-09T20:11:00+01:00"> Sun 09 August 2009 </time>
-            </footer><!-- /.post-info -->
-            <div class="entry-content">
-              <p>Like many others, I read Paul Graham's <a href="http://www.paulgraham.com/avg.html">Lisp</a> <a href="http://www.paulgraham.com/power.html">essays</a> and thought I should give Lisp a go. I installed <a href="http://clojure.org/">Clojure</a> and wrote my first Lisp program:  </p>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">num_books</span>
- <span class="p">([</span><span class="nv">dist</span><span class="p">]</span>
-   <span class="p">(</span><span class="nf">num_books</span> <span class="nv">dist</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">))</span>
- <span class="p">([</span><span class="nv">dist</span> <span class="nv">achieved</span> <span class="nv">nbooks</span><span class="p">]</span>
- <span class="p">(</span><span class="k">if</span>
-   <span class="p">(</span><span class="nf">&gt;=</span> <span class="nv">achieved</span> <span class="nv">dist</span><span class="p">)</span>
-   <span class="nv">nbooks</span>
-   <span class="p">(</span><span class="nf">num_books</span> <span class="nv">dist</span>
-       <span class="p">(</span><span class="nf">+</span> <span class="nv">achieved</span>
-           <span class="p">(</span><span class="nf">/</span> <span class="mi">1</span>
-               <span class="p">(</span><span class="nf">+</span> <span class="nv">nbooks</span> <span class="mi">2</span><span class="p">)))</span>
-       <span class="p">(</span><span class="nf">+</span> <span class="nv">nbooks</span> <span class="mi">1</span><span class="p">)))))</span>
-
-<span class="p">(</span><span class="nf">println</span> <span class="p">(</span><span class="nf">num_books …</span></code></pre></div>
-              <a class="readmore" href="/lisp.html">
                 read more
               </a>
             </div><!-- /.entry-content -->
