@@ -80,7 +80,6 @@ HTT  </p>
 <span class="w">    </span><span class="n">del</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key</span><span class="o">]</span><span class="w"></span>
 </code></pre></div>
 
-
 <p>Running this gives: <code>After 178 flips the probability of getting 7 in a row is 0.5014494277755364</code>. So my answer is 178!  </p>
 <p>Any corrections and comments welcome :-)  </p>
 <h4>Update 2018-04-08</h4>
@@ -97,9 +96,9 @@ HTT  </p>
     <span class="n">fib</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">fibs</span><span class="p">)</span>
     <span class="n">fibs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span>
     <span class="n">prob</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">fib</span> <span class="o">/</span> <span class="n">tot</span>
-    <span class="k">print</span><span class="p">(</span>
-        <span class="n">f</span><span class="s2">&quot;After {n} flips the probability of getting {NUM_IN_A_ROW} in a row &quot;</span>
-        <span class="n">f</span><span class="s2">&quot;is {prob}&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;After </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> flips the probability of getting </span><span class="si">{</span><span class="n">NUM_IN_A_ROW</span><span class="si">}</span><span class="s2"> in a row &quot;</span>
+        <span class="sa">f</span><span class="s2">&quot;is </span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">prob</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="n">tot</span> <span class="o">*=</span> <span class="mi">2</span>

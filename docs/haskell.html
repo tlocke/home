@@ -51,14 +51,11 @@ All elements must be of same type. Length doesn't affect the type.<br>
 areaCirc r = pi * r^2<br>
 <br>
 </div>
-
 <div>Type names always start with a capital letter.<br>
 </div>
-
 <div><br>
 </div>
-
-<p>Parametric polymorphism (generics)<br>
+<p>Parametric polymorphism (generics)<br></p>
 <pre>length :: [a] -&gt; Int<span><br></span><span style="font-family:arial,sans-serif"><span><br></span></span></pre>
 <pre><span style="font-family:arial,sans-serif"><span>Type constraint after :: and before =&gt; </span><br></span></pre>
 <pre><span style="font-family:arial,sans-serif"><span>(</span><span>+</span><span>)</span> <span>::</span> <span>(</span><span>Num</span> <span>a</span><span>)</span> <span>=&gt;</span> <span>a</span> <span>-&gt;</span> <span>a</span> <span>-&gt;</span> <span>a<br><br>Num is a typeclass.<br><br></span></span></pre>
@@ -91,7 +88,7 @@ areaCirc r = pi * r^2<br>
 <pre><span><b>Data</b><br><br></span><span>data</span> <span>Anniversary</span> <span>=</span> <span>Birthday</span> <span>String</span> <span>Int</span> <span>Int</span> <span>Int</span>       <span>-- name, year, month, day</span>
                  <span>|</span> <span>Wedding</span> <span>String</span> <span>String</span> <span>Int</span> <span>Int</span> <span>Int</span> <span>-- spouse name 1, spouse name 2, year, month, day<br><br></span></pre>
 <pre><span><b>As patterns</b></span><br><br><span>contrivedMap</span> <span>f</span> <span>list</span><span>@</span><span>(</span><span>x</span><span>:</span><span>xs</span><span>)</span> <span>=</span> <span>f</span> <span>list</span> <span>x</span> <span>:</span> <span>contrivedMap</span> <span>f</span> <span>xs<br><br></span></pre>
-<pre><span><b>Do</b><br><br>main = do  <br>    putStrLn "What's your first name?"  <br>    firstName &lt;- getLine  <br>    putStrLn "What's your last name?"  <br>    lastName &lt;- getLine  <br>    let bigFirstName = map toUpper firstName  <br>        bigLastName = map toUpper lastName  <br>    putStrLn $ "hey " ++ bigFirstName ++ " " ++ bigLastName ++ ", how are you?"  <br></span></pre></p>
+<pre><span><b>Do</b><br><br>main = do  <br>    putStrLn "What's your first name?"  <br>    firstName &lt;- getLine  <br>    putStrLn "What's your last name?"  <br>    lastName &lt;- getLine  <br>    let bigFirstName = map toUpper firstName  <br>        bigLastName = map toUpper lastName  <br>    putStrLn $ "hey " ++ bigFirstName ++ " " ++ bigLastName ++ ", how are you?"  <br></span></pre>
   </div><!-- /.entry-content -->
 </section>
     <br>
