@@ -79,7 +79,7 @@ nav li:not(:first-child):before {
   font-size: x-small;
 }
 
-body > img {
+img {
   max-width: 100%;
   height: auto;
 }
