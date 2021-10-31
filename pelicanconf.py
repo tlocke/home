@@ -29,7 +29,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ("Archive", "/archives.html"),
-    ("Twitter", "http://twitter.com/t_locke"),
+    ("Twitter", "https://twitter.com/t_locke"),
     ("GitHub", "https://github.com/tlocke"),
 )
 

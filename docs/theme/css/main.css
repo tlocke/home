@@ -55,7 +55,10 @@
 }
 
 body {
-    font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav ul {
@@ -73,9 +76,30 @@ nav li:not(:first-child):before {
 
 #contentinfo {
   text-align: center;
+  font-size: x-small;
 }
 
-img {
+body > img {
   max-width: 100%;
   height: auto;
+}
+
+.entry-title {
+  text-align: center;
+}
+
+blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-left: 1em;
+  border-left: 0.5em solid #ccc;
+}
+
+.entry-content {
+  text-align: justify;
+}
+.post-info {
+  text-align: center;
+  font-size: small;
 }
