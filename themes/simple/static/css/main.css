@@ -59,6 +59,8 @@ body {
   max-width: 50em;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 nav ul {
@@ -84,8 +86,19 @@ img {
   height: auto;
 }
 
-.entry-title {
+article header {
   text-align: center;
+}
+
+time {
+  font-size: small;
+}
+
+article {
+  padding-top: 1em;
+  border-bottom: solid;
+  padding-bottom: 1em;
+  text-align: justify;
 }
 
 blockquote {
@@ -96,10 +109,3 @@ blockquote {
   border-left: 0.5em solid #ccc;
 }
 
-.entry-content {
-  text-align: justify;
-}
-.post-info {
-  text-align: center;
-  font-size: small;
-}

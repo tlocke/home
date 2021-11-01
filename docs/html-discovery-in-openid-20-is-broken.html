@@ -26,24 +26,22 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      HTML discovery in OpenId 2.0
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2007-10-27T12:15:00+01:00">
-      Sat 27 October 2007
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        HTML discovery in OpenId 2.0
+      </h2>
+      
+      <time class="published" datetime="2007-10-27T12:15:00+01:00">
+        Sat 27 October 2007
+      </time>
+    </header>
     <p>The <a href="http://openid.net/specs/openid-authentication-2_0-12.html">OpenId 2.0 specification</a> is intended to be backwards compatible. However in the latest draft (12), the recommended <a href="http://openid.net/specs/openid-authentication-2_0-12.html#anchor50">markup for HTML discovery</a> gives the 'rel' attribute in the 'link' element the values 'openid2.provider openid.server' and 'openid2.local_id openid.delegate'. In OpenId 1.x the values for 'rel' were simply 'openid.server' and 'openid.delegate'.  </p>
 <p>So to really be compatible with previous versions, the markup should be the same as in OpenId 1.x. I urge the authors of the specification to change it back. In my experience with <a href="http://www.own-id.com/">OwnId</a> if you stick to the specification on this, you break compatibility with previous versions.  </p>
 <p>Come to think of it, I don't see why a link to the server is needed at all. Can someone explain this to me?</p>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

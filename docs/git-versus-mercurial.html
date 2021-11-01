@@ -26,19 +26,16 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Git versus Mercurial
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2013-05-04T18:17:00+01:00">
-      Sat 04 May 2013
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Git versus Mercurial
+      </h2>
+      
+      <time class="published" datetime="2013-05-04T18:17:00+01:00">
+        Sat 04 May 2013
+      </time>
+    </header>
     <p>I know very little about the religious war of Git versus Mercurial, but ignorance has never stopped me from having a firm opinion.  </p>
 <p>I come down on the side of Git for these reasons:  </p>
 <h4>Local Version Numbers</h4>
@@ -47,8 +44,9 @@
 <p>Okay, local version numbers is just an annoyance. The big difference for me is that for Mercurial, history is literal, but for Git, history is a story. If you ask someone what they did yesterday evening, they'll say something like, "I watched Holby City", they don't say "I sat on the bean bag next to the sofa at 20:00 and put the TV on and changed the channel to BBC1 and then watched the screen for approximately 1 hour...". The first is the Git answer, where you summarize the salient points after they occur. The second is the Mercurial approach where you give a verbatim replay of the events as they occurred. So with Git you're encouraged to tidy up your history before you push to a public repository. With Mercurial you're encouraged to view history as immutable, and however you got to the point you're at, that's what you make public.  </p>
 <h4>Indiscriminate Push</h4>
 <p>With Git you get to explicitly push individual branches to a remote repository. With Mercurial, the push command pushes all branches to the remote repository, which isn't necessarily what you want. Mercurial tries to get round this with bookmarks, but I feel that this is a hack, and that Git's branches are more elegant. With Mercurial, branches are part of the commit, but with Git, branches are references held outside the commit. The Git approach turns out to be the way to go.  </p>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

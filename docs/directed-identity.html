@@ -26,26 +26,24 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Directed Identity
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2009-08-01T14:17:00+01:00">
-      Sat 01 August 2009
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Directed Identity
+      </h2>
+      
+      <time class="published" datetime="2009-08-01T14:17:00+01:00">
+        Sat 01 August 2009
+      </time>
+    </header>
     <p>I read Glyn Moody's writings with interest, but with his post <a href="http://opendotdotdot.blogspot.com/2009/07/why-single-sign-on-systems-are-bad.html">Why Single Sign On Systems Are Bad</a> I think he's made a rare slip. Here's a note to Glyn on why I think he's wrong on this occasion:  </p>
 <p>You conflate single sign-on (SSO) and single identity. OpenId lets you have SSO [and]{style="font-style: italic;"}lets you have a separate identity for each web site you visit. It's called Directed Identity, and Peter Williams <a href="http://barelyenough.org/blog/2007/12/openid-20s-killer-feature/">gives a good explanation</a> of it.  </p>
 <p><a href="http://openid.net/logo-graphics/openid-icon-250x250.png"><img alt="OpenId" src="http://openid.net/logo-graphics/openid-icon-250x250.png"></a>  </p>
 <p>~~Yahoo! implement directed identity. Anyone with a Yahoo! account that signs in to websites using OpenId automatically has a different ID for each web site. When you sign in to the web site you just type yahoo.com in the OpenId box, and Yahoo! magically works it all out.~~  </p>
 <p><ins>I got that last paragraph wrong. As <a href="http://willnorris.com/2009/07/openid-directed-identity-identifier-select">Will Norris explains</a>, Yahoo! implements <em>identifier select</em> and can give an <em>opaque URL</em>, Yahoo! does not support <em>directed identity</em>. Google does support directed identity.</ins></p>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

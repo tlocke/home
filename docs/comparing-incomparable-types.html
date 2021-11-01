@@ -27,26 +27,24 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Comparing incomparable types
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2008-12-07T11:00:00+00:00">
-      Sun 07 December 2008
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Comparing incomparable types
+      </h2>
+      
+      <time class="published" datetime="2008-12-07T11:00:00+00:00">
+        Sun 07 December 2008
+      </time>
+    </header>
     <p>The <a href="http://docs.python.org/dev/3.0/whatsnew/3.0.html#ordering-comparisons">Python 3 changes doc</a> says:  </p>
 <blockquote>
 <p>objects of different incomparable types always compare unequal to each other.</p>
 </blockquote>
 <p>I don't think this is the right way to go. If you try to compare incomparable types, a <code>TypeError</code> exception should be thrown. For example, at the moment if you write <code>9 == 'hello'</code> in Python it'll return false, but I think it should throw a <code>TypeError</code>.</p>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

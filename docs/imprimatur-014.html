@@ -27,26 +27,24 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Imprimatur 014
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2008-06-19T19:32:00+01:00">
-      Thu 19 June 2008
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Imprimatur 014
+      </h2>
+      
+      <time class="published" datetime="2008-06-19T19:32:00+01:00">
+        Thu 19 June 2008
+      </time>
+    </header>
     <p>A bug-fix <a href="http://sourceforge.net/project/showfiles.php?group_id=145016&amp;package_id=159509">release</a> of <a href="http://imprimatur.wikispaces.com/">Imprimatur</a>. Fixed a problem that has been there for ages. If you started Imprimatur with a file name only (no path) for the script file, and then referred to another file in the script file, there would be a problem. I fixed it using:  </p>
 <p><code>File file = new File(fileName).getAbsoluteFile();</code>  </p>
 <p>instead of:  </p>
 <p><code>File file = new File(fileName);</code>  </p>
 <p>Thanks to Jesse Pelton for reporting this bug.</p>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

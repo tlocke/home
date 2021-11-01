@@ -26,19 +26,16 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Haskell
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2008-03-20T00:00:00+00:00">
-      Thu 20 March 2008
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Haskell
+      </h2>
+      
+      <time class="published" datetime="2008-03-20T00:00:00+00:00">
+        Thu 20 March 2008
+      </time>
+    </header>
     <div>
 <div>An aide memoire.<br>
 </div>
@@ -89,8 +86,9 @@ areaCirc r = pi * r^2<br>
                  <span>|</span> <span>Wedding</span> <span>String</span> <span>String</span> <span>Int</span> <span>Int</span> <span>Int</span> <span>-- spouse name 1, spouse name 2, year, month, day<br><br></span></pre>
 <pre><span><b>As patterns</b></span><br><br><span>contrivedMap</span> <span>f</span> <span>list</span><span>@</span><span>(</span><span>x</span><span>:</span><span>xs</span><span>)</span> <span>=</span> <span>f</span> <span>list</span> <span>x</span> <span>:</span> <span>contrivedMap</span> <span>f</span> <span>xs<br><br></span></pre>
 <pre><span><b>Do</b><br><br>main = do  <br>    putStrLn "What's your first name?"  <br>    firstName &lt;- getLine  <br>    putStrLn "What's your last name?"  <br>    lastName &lt;- getLine  <br>    let bigFirstName = map toUpper firstName  <br>        bigLastName = map toUpper lastName  <br>    putStrLn $ "hey " ++ bigFirstName ++ " " ++ bigLastName ++ ", how are you?"  <br></span></pre>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

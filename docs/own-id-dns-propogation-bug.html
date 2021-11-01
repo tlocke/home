@@ -27,26 +27,24 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Own-Id: DNS propogation bug
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2007-11-08T23:30:00+00:00">
-      Thu 08 November 2007
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Own-Id: DNS propogation bug
+      </h2>
+      
+      <time class="published" datetime="2007-11-08T23:30:00+00:00">
+        Thu 08 November 2007
+      </time>
+    </header>
     <p>I was going through the <a href="http://www.own-id.com/">Own-Id</a> error log and found a
 bug that affects new users only. It occurred when the DNS propagated to the
 user's browser before it reached the Own-Id server. I've now changed the code
 so that no DNS lookup is ever done on the domain name that the user is trying
 to set up.</p>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">

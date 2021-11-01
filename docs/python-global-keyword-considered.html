@@ -27,19 +27,16 @@
             <li><a href="https://github.com/tlocke">GitHub</a></li>
       </ul>
     </nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      Python 'global' Keyword Considered Harmful
-    </h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2010-08-05T21:38:00+01:00">
-      Thu 05 August 2010
-    </time>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Python 'global' Keyword Considered Harmful
+      </h2>
+      
+      <time class="published" datetime="2010-08-05T21:38:00+01:00">
+        Thu 05 August 2010
+      </time>
+    </header>
     <p>Looking at Python's <code>global</code> keyword led me to think how I'd like <a href="http://en.wikipedia.org/wiki/Scope_(programming)">scoping</a> to work. Some languages have lexical scoping, some dynamic scoping and some a mixture of two. I think scoping should be entirely lexical. My language (let's call it Klop) is dynamically typed, and variables are declared the first time they are assigned, so if you wrote:</p>
 <div>
 
@@ -55,8 +52,9 @@
 Calling `g()` would return 1. In most languages with lexical scoping you can declare a variable with the same name, at a more local scope. With Klop you can't, and I think that this would make programs more readable.
 
 </div>
-  </div><!-- /.entry-content -->
-</section>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
     <br>
     <footer id="contentinfo" class="body">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
