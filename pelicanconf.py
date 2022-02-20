@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = "Tony Locke"
 SITENAME = "Tony Locke"
@@ -13,7 +11,8 @@ TIMEZONE = "Europe/London"
 DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_DOMAIN = "https://www.tlocke.org.uk"
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
@@ -29,7 +28,6 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ("Archive", "/archives.html"),
-    ("Twitter", "https://twitter.com/t_locke"),
     ("GitHub", "https://github.com/tlocke"),
 )
 

@@ -7,4 +7,3 @@ Local setup:
 Local view:
 
 * `pelican -lr`
-* View at http://localhost:8000/

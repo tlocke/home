@@ -40,11 +40,14 @@
     </header><!-- /#banner -->
     <nav id="menu">
       <ul>
-        {% if page_name == 'index' and articles_previous_page == None %}
-          <li>Tony Locke</li>
-        {% else %}
-          <li><a href="/">Tony Locke</a></li>
-        {% endif %}
+        <li>
+          {%- if page_name == 'index' and articles_previous_page == None -%}
+            Tony Locke
+          {%- else -%}
+            <a href="/">Tony Locke</a>
+          {%- endif %}
+          <a href="/feeds/all.atom.xml"><img src="/{{ THEME_STATIC_DIR }}/images/icons/atom.png" /></a>
+        </li>
 
         {% for title, link in MENUITEMS %}
           {% if page_name == 'archives' and title == 'Archive' %}
