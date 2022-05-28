@@ -1,0 +1,132 @@
+Title: Intend To Read
+
+<div style="clear:both">
+<div>These are books and films I intend to read. Also see <a href="http://blog.tlocke.org.uk/search/label/book-review" rel="nofollow" target="_blank"><font color="#497fb1">unfocussed reviews</font></a>. 
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Alan_Clark_Diaries" rel="nofollow" target="_blank"><font color="#497fb1" size="-0">Alan Clark Diaries</font></a></li>
+<li><a href="http://www.gutenberg.org/etext/2680" rel="nofollow" target="_blank"><font color="#497fb1" size="-0">Marcus Aurelius - Meditations</font></a></li>
+<li><a href="http://en.wikipedia.org/wiki/A_Dance_to_the_Music_of_Time" rel="nofollow" target="_blank"><font color="#497fb1" size="-0">A Dance to the music of time</font></a></li>
+<li>Norman Mailer 
+</li>
+<li>John Updike 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/The_Tipping_Point_%28book%29" rel="nofollow" target="_blank"><font color="#497fb1" size="-0">http://en.wikipedia.org/wiki/The_Tipping_Point_%28book%29</font></a></li>
+<li>The Age of Consent: A Manifesto for a New World Order - George Monbiot 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Voice_of_the_Fire" rel="nofollow" target="_blank"><font color="#497fb1" size="-0">http://en.wikipedia.org/wiki/Voice_of_the_Fire</font></a></li>
+<li>One flew over the Cuckoo's nest 
+</li>
+<li>Patch Adams 
+</li>
+<li>The Long Tail 
+</li>
+<li>Emile Zola, Germinal 
+</li>
+<li>The testament of Gideon mack 
+</li>
+<li>The Complete Roderick - John Sladek 
+</li>
+<li>Audit of War - Correlli Barnett 
+</li>
+<li>The Ingenuity Gap - Thomas Homer-Dixon 
+</li>
+<li>Mastering the Dynamics of Innovation - James Utterback 
+</li>
+<li>Amory Lovins 
+</li>
+
+<li>The Road to Reality</li>
+<li>Dreaming in Code - Scott Rosenberg</li>
+<li><a href="http://en.wikipedia.org/wiki/Rameau%27s_Nephew" rel="nofollow">Rameau's Nephew</a></li>
+<li>The Prime of Miss Jean Brodie, Muriel Spark</li>
+<li>Frannie and Zooey, J.D. Salinger</li>
+<li>Moliere.</li>
+<li>Animal Farm</li>
+<li>The Outsider</li>
+<li>Robert Heinlein's Stranger In A Strange Land</li>
+<li>For nephews:</li>
+<ul><li>Carle</li>
+<li>Kipling</li>
+<li>Dahl</li>
+<li>Tolkien</li></ul>
+<li>http://greenteapress.com/compmod/html/index.html recommended by http://hackershelf.com/</li>
+<li>The Island Of Dr Moreau</li>
+<li>Shadow of the Wind, recommended by Tristan.</li>
+<li>Ackroyd on Hawksmoor, recommended by Zoe.</li>
+<li>No Country For Old Men<br>
+</li>
+</ul>
+<h2>Films</h2>
+<ul>
+<li>Tony Hancock - <a href="http://en.wikipedia.org/wiki/The_Rebel_%281961_movie%29" rel="nofollow" target="_blank"><font color="#497fb1" size="-0">The Rebel</font></a></li>
+<li>Napolean Dynamite </li>
+</ul>
+<ul>
+<li>V For Vendetta </li>
+</ul>
+<ul>
+<li>Electric Dreams 
+</li>
+<li>Logan's Run 
+</li>
+<li>Westworld 
+</li>
+<li>On the Waterfront - 1954 
+</li>
+<li>Saturday Night / Sunday Morning - 1960 
+</li>
+<li>Being There - 1960 
+</li>
+<li>Things to Come - 1936 
+</li>
+
+<li>Triumph of the Will - 1936 
+</li>
+<li>Claire's Knee - 1970 
+</li>
+<li>Zero de Conduite - 1933 
+</li>
+<li>Tunes of Glory - 1960 
+</li>
+<li>The Great Race - 1965</li>
+<li>I'm alright Jack - 1959 
+</li>
+<li>The Ploughman's Lunch - 1983 
+</li>
+<li>Dr Strangelove - 1963</li>
+
+<li>Solaris - 1972 
+</li>
+<li>Mash - 1970 
+</li>
+<li>Kind Hearts and Coronets - 1949 
+</li>
+<li>
+<div>
+
+
+
+<div>
+
+
+<div><font face="Arial" size="2">http://www.zeitgeistmovie.com/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://video.google.com/videoplay?docid=7065205277695921912</font></div>
+</div>
+</div>
+</li>
+<li><font face="Arial" size="2">There's something about Mary.</font></li>
+<li><font face="Arial" size="2">Frost / Nixon.</font></li>
+<li><font face="Arial" size="2">When Harry Met Sally</font></li>
+<li><font face="Arial" size="2">There Will Be Blood</font></li>
+<li><font face="Arial" size="2">Woody Allen - Bananas.<br>
+</font></li>
+<li><font face="Arial" size="2">The Road</font></li>
+<li><font face="Arial" size="2">Tremors</font></li>
+<li><font face="Arial" size="2">Julia recommends Arctic Blast.<br>
+</font></li>
+<li>Century of the self.<br>
+</li>
+</ul>
+<br>
+</div>
+</div>
+
