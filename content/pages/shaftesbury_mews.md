@@ -1,7 +1,7 @@
 title: Shaftesbury Mews
 status: hidden
 
-The idea of this page is to keep a track of the land that the owners of 1, 2, 3, 5 and
+The idea of this page is to keep a track of the land that the owners of 1, 2, 3, 4 and
 5 Shaftesbury Mews, Bath have joint rights over (common land). Here's a map showing the
 driveway in yellow and the bin store and bike store that we have equal use of and rights
 over:
