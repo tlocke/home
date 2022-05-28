@@ -6,8 +6,6 @@ The idea of this page is to keep a track of the land that the owners of 1, 2, 3,
 driveway in yellow and the bin store and bike store that we have equal use of and rights
 over:
 
-![Common Land](/url "Common Land")
-
 <p style="text-align: center">
   <img alt="Common Land" title="Common Land"
     src="{static}/images/2022/shaftesbury_mews_map.jpg">
