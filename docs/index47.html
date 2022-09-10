@@ -32,18 +32,20 @@
               </time>
             </header>
             <p>Like many others, I read Paul Graham's <a href="http://www.paulgraham.com/avg.html">Lisp</a> <a href="http://www.paulgraham.com/power.html">essays</a> and thought I should give Lisp a go. I installed <a href="http://clojure.org/">Clojure</a> and wrote my first Lisp program:  </p>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">num_books</span>
- <span class="p">([</span><span class="nv">dist</span><span class="p">]</span>
-   <span class="p">(</span><span class="nf">num_books</span> <span class="nv">dist</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">))</span>
- <span class="p">([</span><span class="nv">dist</span> <span class="nv">achieved</span> <span class="nv">nbooks</span><span class="p">]</span>
- <span class="p">(</span><span class="k">if</span>
-   <span class="p">(</span><span class="nf">&gt;=</span> <span class="nv">achieved</span> <span class="nv">dist</span><span class="p">)</span>
-   <span class="nv">nbooks</span>
-   <span class="p">(</span><span class="nf">num_books</span> <span class="nv">dist</span>
-       <span class="p">(</span><span class="nf">+</span> <span class="nv">achieved</span>
-           <span class="p">(</span><span class="nf">/</span> <span class="mi">1</span>
-               <span class="p">(</span><span class="nf">+</span> <span class="nv">nbooks</span> <span class="mi">2</span><span class="p">)))</span>
-       <span class="p">(</span><span class="nf">+</span> <span class="nv">nbooks …</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">num_books</span><span class="w"></span>
+<span class="w"> </span><span class="p">([</span><span class="nv">dist</span><span class="p">]</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nf">num_books</span><span class="w"> </span><span class="nv">dist</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
+<span class="w"> </span><span class="p">([</span><span class="nv">dist</span><span class="w"> </span><span class="nv">achieved</span><span class="w"> </span><span class="nv">nbooks</span><span class="p">]</span><span class="w"></span>
+<span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nf">&gt;=</span><span class="w"> </span><span class="nv">achieved</span><span class="w"> </span><span class="nv">dist</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="nv">nbooks</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nf">num_books</span><span class="w"> </span><span class="nv">dist</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="nf">+</span><span class="w"> </span><span class="nv">achieved</span><span class="w"></span>
+<span class="w">           </span><span class="p">(</span><span class="nf">/</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nf">+</span><span class="w"> </span><span class="nv">nbooks</span><span class="w"> </span><span class="mi">2</span><span class="p">)))</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="nf">+</span><span class="w"> </span><span class="nv">nbooks</span><span class="w"> </span><span class="mi">1</span><span class="p">)))))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nf">println</span><span class="w"> </span><span class="p">(</span><span class="nf">num_books …</span></code></pre></div>
             <a class="readmore" href="/lisp.html">read more</a>
             <footer class="post-info">
             </footer><!-- /.post-info -->
