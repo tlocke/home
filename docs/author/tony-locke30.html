@@ -23,6 +23,36 @@
           <article class="hentry">
             <header>
               <h2 class="entry-title">
+                <a href="/lisp.html" rel="bookmark"
+                  title="Permalink to Lisp"
+                  >Lisp</a>
+              </h2>
+              <time class="published" datetime="2009-08-09T20:11:00+01:00">
+                Sun 09 August 2009
+              </time>
+            </header>
+            <p>Like many others, I read Paul Graham's <a href="http://www.paulgraham.com/avg.html">Lisp</a> <a href="http://www.paulgraham.com/power.html">essays</a> and thought I should give Lisp a go. I installed <a href="http://clojure.org/">Clojure</a> and wrote my first Lisp program:  </p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">num_books</span><span class="w"></span>
+<span class="w"> </span><span class="p">([</span><span class="nv">dist</span><span class="p">]</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nf">num_books</span><span class="w"> </span><span class="nv">dist</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
+<span class="w"> </span><span class="p">([</span><span class="nv">dist</span><span class="w"> </span><span class="nv">achieved</span><span class="w"> </span><span class="nv">nbooks</span><span class="p">]</span><span class="w"></span>
+<span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nf">&gt;=</span><span class="w"> </span><span class="nv">achieved</span><span class="w"> </span><span class="nv">dist</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="nv">nbooks</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nf">num_books</span><span class="w"> </span><span class="nv">dist</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="nf">+</span><span class="w"> </span><span class="nv">achieved</span><span class="w"></span>
+<span class="w">           </span><span class="p">(</span><span class="nf">/</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="nf">+</span><span class="w"> </span><span class="nv">nbooks</span><span class="w"> </span><span class="mi">2</span><span class="p">)))</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="nf">+</span><span class="w"> </span><span class="nv">nbooks</span><span class="w"> </span><span class="mi">1</span><span class="p">)))))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nf">println</span><span class="w"> </span><span class="p">(</span><span class="nf">num_books …</span></code></pre></div>
+            <a class="readmore" href="/lisp.html">read more</a>
+            <footer class="post-info">
+            </footer><!-- /.post-info -->
+          </article>
+          <article class="hentry">
+            <header>
+              <h2 class="entry-title">
                 <a href="/where-angels-fear-to-tread.html" rel="bookmark"
                   title="Permalink to Where Angels Fear To Tread"
                   >Where Angels Fear To Tread</a>
@@ -183,24 +213,6 @@ It's astonishing in The Brothers Karamazov (published in 1880) how up-to-date Do
             </header>
             <p>I dreamt that I saw a very ill child, a toddler, lying in bed with a lurid green face. I said that he had to be taken to hospital. His mother said they were going to take him, as soon as the father came back. I said NO, the child …</p>
             <a class="readmore" href="/lurid-green-face.html">read more</a>
-            <footer class="post-info">
-            </footer><!-- /.post-info -->
-          </article>
-          <article class="hentry">
-            <header>
-              <h2 class="entry-title">
-                <a href="/mysterious-pattern-of-stick-like.html" rel="bookmark"
-                  title="Permalink to A Mysterious Pattern Of Stick-Like Objects"
-                  >A Mysterious Pattern Of Stick-Like Objects</a>
-              </h2>
-              <time class="published" datetime="2009-07-18T18:40:00+01:00">
-                Sat 18 July 2009
-              </time>
-            </header>
-            <p>Previously I <a href="/ufos-in-my-garden.html">told you about the UFO activity</a> that occured in my garden. To update you, the mother ship is still there, but the curious rectangular craft have disappeared, replaced by a mysterious pattern of stick-like objects. You can just about make out the sticks in the photo below:<br>
-<img alt="Sticks" src="/images/2009/2009-07-18_18_38_14.jpg">  </p>
-<p>What …</p>
-            <a class="readmore" href="/mysterious-pattern-of-stick-like.html">read more</a>
             <footer class="post-info">
             </footer><!-- /.post-info -->
           </article>
