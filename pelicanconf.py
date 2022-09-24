@@ -35,8 +35,6 @@ MENUITEMS = (
 # RELATIVE_URLS = True
 
 OUTPUT_PATH = "docs"
-ARTICLE_URL = '{date:%Y}/{slug}.html'
-ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 # THEME = "/home/tlocke/home/themes/notmyidea"
 THEME = "themes/simple"
 YEAR_ARCHIVE_SAVE_AS = "posts/{date:%Y}/index.html"
