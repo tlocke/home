@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - MOSM</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        MOSM
+      </h2>
+      
+      <time class="published" datetime="2011-01-17T16:07:00+00:00">
+        Mon 17 January 2011
+      </time>
+    </header>
+    <p>I've done some work on <a href="http://mobosm.appspot.com/">MOSM</a>, the mobile web site for seeing a map of where you are. For fun I thought I'd use HTML5. It worked out okay on the browser you get with Android 2.2.  </p>
+<p>One thing I had to learn to get a web page working in a mobile was to use the <a href="http://www.w3.org/TR/mwabp/#bp-viewport">meta viewport element</a>:  </p>
+<p><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>  </p>
+<p>If you try out MOSM, you'll notice that it has two flaws:  </p>
+<ul>
+<li>The downloading of the tiles is really slow. I've turned off the tile buffer, where it downloads tiles off the edge of the screen, but it's still slow.</li>
+<li>To get the current position, it doesn't trigger the retrieval of GPS coordinates. An app does, but a browser app doesn't.</li>
+</ul>
+<p>If you know how to solve these problems, please let me know.</p>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

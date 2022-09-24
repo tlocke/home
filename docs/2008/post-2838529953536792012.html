@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - Hi Chaz6! Good question. If your OpenId provider t...</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Hi Chaz6! Good question. If your OpenId provider t...
+      </h2>
+      
+      <time class="published" datetime="2008-12-29T20:15:00+00:00">
+        Mon 29 December 2008
+      </time>
+    </header>
+    <p>Hi Chaz6! Good question. If your OpenId provider turned bad, how would you log in to Own-Id to make it use another provider?  </p>
+<p>Well, it would be handled like this:  </p>
+<ol>
+<li>
+<p>You'd update the DNS to stop your host name pointing to www.own-id.com.  </p>
+</li>
+<li>
+<p>Then your entry in Own-Id could be deleted.  </p>
+</li>
+<li>
+<p>Then you'd re-point your host name to www.own-id.com and set it up anew.  </p>
+</li>
+</ol>
+<p>At the moment the deleting of the entry in Own-Id would be done manually by me. I could automate it if you like, but it hasn't been necessary up to now.  </p>
+<p>The key thing is that an entry in Own-Id can only be deleted if the user's host name has stopped pointing to it. I've taken the approach that whoever controls the DNS for the host name, controls the entry in Own-Id.  </p>
+<p>Let me know what you think!</p>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

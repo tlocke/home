@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - Haskell</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Haskell
+      </h2>
+      
+      <time class="published" datetime="2008-03-20T00:00:00+00:00">
+        Thu 20 March 2008
+      </time>
+    </header>
+    <div>
+<div>An aide memoire.<br>
+</div>
+<div><br>
+l = [1, 2, 3]<br>
+<br>
+</div>
+All elements must be of same type. Length doesn't affect the type.<br>
+<br>
+areaCirc r = pi * r^2<br>
+<br>
+</div>
+<div>Type names always start with a capital letter.<br>
+</div>
+<div><br>
+</div>
+<p>Parametric polymorphism (generics)<br></p>
+<pre>length :: [a] -&gt; Int<span><br></span><span style="font-family:arial,sans-serif"><span><br></span></span></pre>
+<pre><span style="font-family:arial,sans-serif"><span>Type constraint after :: and before =&gt; </span><br></span></pre>
+<pre><span style="font-family:arial,sans-serif"><span>(</span><span>+</span><span>)</span> <span>::</span> <span>(</span><span>Num</span> <span>a</span><span>)</span> <span>=&gt;</span> <span>a</span> <span>-&gt;</span> <span>a</span> <span>-&gt;</span> <span>a<br><br>Num is a typeclass.<br><br></span></span></pre>
+<pre><span style="font-family:arial,sans-serif"><b>Guards</b><br><br><span>mySignum</span> <span>x</span>
+    <span>|</span> <span>x</span> <span>&lt;</span> <span>0</span>     <span>=</span> <span>-</span><span>1</span>
+    <span>|</span> <span>x</span> <span>&gt;</span> <span>0</span>     <span>=</span> <span>1</span>
+    <span>|</span> <span>otherwise</span> <span>=</span> <span>0<br><br><br></span><b>Pattern matching</b><br><span>pts</span> <span>::</span> <span>Int</span> <span>-&gt;</span> <span>Int</span>
+<span>pts</span> <span>1</span> <span>=</span> <span>10</span>
+<span>pts</span> <span>2</span> <span>=</span> <span>6</span>
+<span>pts</span> <span>3</span> <span>=</span> <span>4</span>
+<span>pts</span> <span>4</span> <span>=</span> <span>3</span>
+<span>pts</span> <span>5</span> <span>=</span> <span>2</span>
+<span>pts</span> <span>6</span> <span>=</span> <span>1</span>
+<span>pts</span> <span>_</span> <span>=</span> <span>0<br><b><br><br>Where</b><br><br></span></span>log2 x = higher x 0
+        where
+        higher x n
+                | power 2 n &gt; x = n - 1
+                | otherwise     = higher x (n + 1)<br><br></pre>
+<pre>map <br></pre>
+<pre>{- higher order function (has a function as an argument) -}<br><br></pre>
+<pre><b>Modules<br><br></b></pre>
+<pre>import Data.List<br><br></pre>
+<pre>foldr f acc xs -- fold right associative<br></pre>
+<pre>foldl -- left associative<br><br></pre>
+<pre>foldl' -- eager evaluation<br></pre>
+<pre>foldr1 -- use last element as initial accumulator<br><br></pre>
+<pre><b>Lists</b><br><br></pre>
+<pre>init -- all but last element<br><br></pre>
+<pre><b>List Comprehensions<br></b><br><span>evensMinusOne</span> <span>es</span> <span>=</span> <span>[</span><span>n</span> <span>-</span> <span>1</span> <span>|</span> <span>n</span> <span>&lt;-</span> <span>es</span><span>,</span> <span>isEven</span> <span>n</span><span>]<br><br></span></pre>
+<pre><span><b>Data</b><br><br></span><span>data</span> <span>Anniversary</span> <span>=</span> <span>Birthday</span> <span>String</span> <span>Int</span> <span>Int</span> <span>Int</span>       <span>-- name, year, month, day</span>
+                 <span>|</span> <span>Wedding</span> <span>String</span> <span>String</span> <span>Int</span> <span>Int</span> <span>Int</span> <span>-- spouse name 1, spouse name 2, year, month, day<br><br></span></pre>
+<pre><span><b>As patterns</b></span><br><br><span>contrivedMap</span> <span>f</span> <span>list</span><span>@</span><span>(</span><span>x</span><span>:</span><span>xs</span><span>)</span> <span>=</span> <span>f</span> <span>list</span> <span>x</span> <span>:</span> <span>contrivedMap</span> <span>f</span> <span>xs<br><br></span></pre>
+<pre><span><b>Do</b><br><br>main = do  <br>    putStrLn "What's your first name?"  <br>    firstName &lt;- getLine  <br>    putStrLn "What's your last name?"  <br>    lastName &lt;- getLine  <br>    let bigFirstName = map toUpper firstName  <br>        bigLastName = map toUpper lastName  <br>    putStrLn $ "hey " ++ bigFirstName ++ " " ++ bigLastName ++ ", how are you?"  <br></span></pre>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

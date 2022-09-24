@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - I'm pleased to announce the marriage of XSL and JavaScript</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        I'm pleased to announce the marriage of XSL and JavaScript
+      </h2>
+      
+      <time class="published" datetime="2006-12-13T09:29:00+00:00">
+        Wed 13 December 2006
+      </time>
+    </header>
+    <p>To get an XSL stylesheet to output XML with JavaScript in it, do this:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;us-ascii&quot;?&gt;</span>
+<span class="k">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span>
+    <span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="err">&amp;t;</span>
+<span class="err">&lt;xsl:output</span> <span class="na">method=</span><span class="s">&quot;xml&quot;</span>
+    <span class="na">doctype-public=</span><span class="s">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+    <span class="na">doctype-system=</span><span class="s">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;</span>
+    <span class="na">cdata-section-elements=</span><span class="s">&quot;javascript-escape&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="k">&lt;xsl:template</span> <span class="na">match=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;title&gt;</span>The Marriage of XSL and JavaScript<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+
+      /*
+        <span class="nt">&lt;javascript-escape&gt;</span>
+          <span class="cp">&lt;![CDATA[</span>
+<span class="cp">      */</span>
+
+<span class="cp">function load() {</span>
+<span class="cp">     alert(&quot;All your bases are belong to us.&quot;);</span>
+<span class="cp">}</span>
+
+<span class="cp">      /* ]]&gt;</span>
+        <span class="nt">&lt;/javascript-escape&gt;</span>
+      */
+      <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&quot;load()&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Captain: You know what you doing.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+<span class="k">&lt;/xsl:template&gt;</span>
+<span class="k">&lt;/xsl:stylesheet&gt;</span>
+</code></pre></div>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

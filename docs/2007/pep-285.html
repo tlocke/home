@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - PEP 285</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+    <meta name="tags" content="language-design" />
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        PEP 285
+      </h2>
+      
+      <time class="published" datetime="2008-11-25T17:34:00+00:00">
+        Tue 25 November 2008
+      </time>
+    </header>
+    <p>I think it was a good idea to add a boolean type to <a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a>, but I don't agree entirely with <a href="http://www.python.org/dev/peps/pep-0285/">PEP 285</a>. Specifically:  </p>
+<blockquote>
+<p>4) Should we strive to eliminate non-Boolean operations on bools in the future, through suitable warnings, so that for example True+1 would eventually (in Python 3000) be illegal?  </p>
+</blockquote>
+<p>and  </p>
+<blockquote>
+<p>8) Should we strive to require that Boolean operations (like "if", "and", "not") have a bool as an argument in the future, so that for example "if []:" would become illegal and would have to be writen as "if bool([]):" ???  </p>
+</blockquote>
+<p>I say yes to both, but the BDFL said no. I say yes because it makes code more readable, reduces the chance of error, and doesn't seem to have any great disadvantages. In the example, instead of <code>if []:</code> I would write <code>if len([]) &gt; 0:</code>. This approach would also solve the last of the 'resolved issues', because writing:  </p>
+<p><samp>if x == True: ...</samp>  </p>
+<p>would mean the same as:  </p>
+<p><samp>if x: ...</samp></p>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

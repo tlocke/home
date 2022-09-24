@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - XSL and JavaScript</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        XSL and JavaScript
+      </h2>
+      
+      <time class="published" datetime="2008-03-01T00:00:00+00:00">
+        Sat 01 March 2008
+      </time>
+    </header>
+    <p>To get an XSL stylesheet to output XML with JavaScript in it, do this:</p>
+<pre>&lt;?xml version="1.0" encoding="us-ascii"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+    &lt;xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.1//EN"
+        doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+        cdata-section-elements="javascript-escape" /&gt;
+    &lt;xsl:template match="/"&gt;
+        &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+            &lt;head&gt;
+                &lt;title&gt;The Marriage of XSL and JavaScript&lt;/title&gt;
+                &lt;script type="text/javascript"&gt;
+                    /* &lt;javascript-escape&gt; &lt;![CDATA[ */
+                    function load() {
+                        alert("All your bases are belong to us.");
+                    }
+                    /* ]]&gt; &lt;/javascript-escape&gt; */
+                &lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body onload="load()"&gt;
+                &lt;p&gt;Captain: You know what you doing.&lt;/p&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</pre>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - On URLs</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        On URLs
+      </h2>
+      
+      <time class="published" datetime="2016-01-01T00:00:00+00:00">
+        Fri 01 January 2016
+      </time>
+    </header>
+    <h2>Trailing slashes</h2>
+<p>According to <a href="http://www.gbiv.com/protocols/uri/rfc/rfc3986.html">RFC 3986</a> the following two URLs are not necessarily equivalent:</p>
+<ul>
+<li>http://gigask.foo/organizations/3</li>
+<li>http://gigask.foo/organizations/3/</li></ul>
+<p>But most users would think the two were equivalent. What's to be done? I think the RFC should have said that the first should be normalized to the second. However, working with the RFC as it is, we can issue a 301 (Moved Permanently) from http://gigask.foo/organizations/3 to http://gigask.foo/organizations/3/. Purists might object that a 301 is for a resource that used to exist but has moved, and http://gigask.foo/organizations/3 never did exist. I'm a purist but I don't think this use of 301 stretches its meaning too far.</p>
+<h2>Cool URIs don't change</h2>
+<p>Say we have to refer to organizations, we might have URLs like:</p>
+<ul>
+<li>http://gigask.foo/organizations/sweb/</li>
+<li>http://gigask.foo/organizations/centrica/</li>
+<li>http://gigask.foo/organizations/eon/</li></ul>
+<p>This is the approach favoured in http://www-128.ibm.com/developerworks/library/us-cranky8.html. If Sweb undergoes a rebranding and the new name is EDF can make http://gigask.foo/organizations/sweb send a permanet redirect to: </p>
+<p>http://gigask.foo/organizations/edf/</p>
+<p>Some problems with this approach are:</p>
+<ul>
+<li>If the URLs are maintained manually, it takes time / money for a diligent webmaster to remember to add the redirect.</li>
+<li>If the URLs are for a web application, the web application software becomes more complicated, again costing time / money. </li>
+<li>What if another company starts up with the name SWEB? (Unlikely with this example, but you can imagine it being a problem in other contexts).</li></ul>
+<p>These problems are solved with a scheme like:</p>
+<ul>
+<li>http://gigask.foo/organizations/974563/</li>
+<li>http://gigask.foo/organizations/67/</li>
+<li>http://gigask.foo/organizations/879881/</li></ul>
+<p>This takes <a href="http://www.w3.org/Provider/Style/URI">Cool URIs don't change</a> to an extreme. The drawback is of course that URLs lose much of their meaning, but my view is that the tradeoff is worth it. Okay, so you've convinced my to use meaningless ids. What about using ISBN codes for books and license numbers for cars as my id?</p>
+<h2>Established ids in URLs?</h2>
+<p>The book 'Being And Nothingness' by Jean-Paul Sartre has ISBN 0671867806. If on my website I have reviews of books, should I use the ISBN?</p>
+<p>http://gigask.foo/book-reviews/0671867806/</p>
+<p>No, because I may have got the isbn wrong, and then the URI would have to change. Better to have a completely new id:</p>
+<p>http://gigask.foo/book-reviews/2859783/</p>
+<p>But what if I have the ISBN and I want to find the corresponding review on gigask.com? It should be possible to do a query like:</p>
+<p>http://gigask.foo/book-reviews/?isbn=0671867806</p>
+<p>This is the URL equivalent to the <a href="http://www.bcarter.com/intsurr1.htm">intelligent versus surrogate keys</a> debate in SQL.</p>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

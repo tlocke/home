@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - Reversible computing</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Reversible computing
+      </h2>
+      
+      <time class="published" datetime="2008-07-12T13:37:00+01:00">
+        Sat 12 July 2008
+      </time>
+    </header>
+    <p>I'm trying to understand <a href="http://en.wikipedia.org/wiki/Reversible_computing">reversible computing</a>. My friend Bill made the comment that it may well be of interest to academics, but it has no appreciable effect in the real world. So here's a rough calculation for the power an irreversible computer needs that's operating right at the Landauer limit. For each bit the energy used per switch is T * k * ln 2. Assume a 2 GHz processor, 5 GB of RAM, and room temperature:  </p>
+<p>power = 293 * 1.38 * 10\^-23 * ln 2 * 2 * 10\^9 * 5 * 10\^9  </p>
+<p>\~ 0.01 W  </p>
+<p>we can times this by 100 because k*ln 2 is just the theoretical minimum that can never be reached.  </p>
+<p>\~ 1 W  </p>
+<p>So with Moore's law, this limit will become increasingly significant.  </p>
+<p>I've no idea if this calculation is correct, I just made it up to prove my own point! Can someone correct me please?</p>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Tony Locke - Python 'global' Keyword Considered Harmful</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel=icon href=/theme/images/icons/favicon.png sizes="16x16" type="image/png">
+      <meta name="generator" content="Pelican" />
+      <link href="https://www.tlocke.org.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tony Locke Full Atom Feed" />
+
+
+
+
+    <meta name="tags" content="language-design" />
+
+  </head>
+
+  <body id="index" class="home">
+      <nav id="menu">
+        <ul>
+          <li><a href="/">Tony Locke</a>            <a href="/feeds/all.atom.xml"><img src="/theme/images/icons/atom.png" /></a>
+          </li>
+
+              <li><a href="/archives.html">Archive</a></li>
+              <li><a href="https://github.com/tlocke">GitHub</a></li>
+        </ul>
+      </nav><!-- /#menu -->
+  <article>
+    <header>
+      <h2 class="entry-title">
+        Python 'global' Keyword Considered Harmful
+      </h2>
+      
+      <time class="published" datetime="2010-08-05T21:38:00+01:00">
+        Thu 05 August 2010
+      </time>
+    </header>
+    <p>Looking at Python's <code>global</code> keyword led me to think how I'd like <a href="http://en.wikipedia.org/wiki/Scope_(programming)">scoping</a> to work. Some languages have lexical scoping, some dynamic scoping and some a mixture of two. I think scoping should be entirely lexical. My language (let's call it Klop) is dynamically typed, and variables are declared the first time they are assigned, so if you wrote:</p>
+<div>
+
+    x = 0
+
+    def f():
+      return x
+
+    def g():
+      x = 1
+      return f()
+
+Calling `g()` would return 1. In most languages with lexical scoping you can declare a variable with the same name, at a more local scope. With Klop you can't, and I think that this would make programs more readable.
+
+</div>
+    <footer class="post-info">
+    </footer><!-- /.post-info -->
+  </article>
+    <br>
+    <footer id="contentinfo" class="body">
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons Licence" style="border-width:0"
+            src="/theme/images/icons/cc.png" />
+      </a><br />This work is licensed under a
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer><!-- /#contentinfo -->
+  </body>
+</html>
