@@ -35,3 +35,14 @@ from the carpark. i have divided into 5 equal areas, which works out to be 6.5sq
 
 * **Description:** Demolish existing sheds and have a green space.
 * **Cost:** Unknown, but cheapest option.
+
+## Option 4
+
+* **Description:** See notes below
+* **Cost:** See notes below
+
+Notes from Gennady: Rebuild 2 sheds but I would pay half so that 1 is used privately
+and 1 is communal. If John at number 2 still want his shed then rebuild 2+1new and
+then 2 will be used privately and 3rd one communal. The size of the shed could be
+as per the sketch hence if someone wanted to add their own it could be added in
+same fashion.
