@@ -46,3 +46,11 @@ and 1 is communal. If John at number 2 still want his shed then rebuild 2+1new a
 then 2 will be used privately and 3rd one communal. The size of the shed could be
 as per the sketch hence if someone wanted to add their own it could be added in
 same fashion.
+
+
+## Option 5
+
+* **Description:** Demolish the sheds and use the space for parking
+* **Cost:** Unknown.
+
+The idea is to use the space where the sheds are as parking, so that each house has a parking space.
