@@ -37,22 +37,22 @@
     </header>
     <p>To get an XSL stylesheet to output XML with JavaScript in it, do this:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;us-ascii&quot;?&gt;</span>
-<span class="k">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span>
-    <span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="err">&amp;t;</span>
-<span class="err">&lt;xsl:output</span> <span class="na">method=</span><span class="s">&quot;xml&quot;</span>
-    <span class="na">doctype-public=</span><span class="s">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
-    <span class="na">doctype-system=</span><span class="s">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;</span>
-    <span class="na">cdata-section-elements=</span><span class="s">&quot;javascript-escape&quot;</span> <span class="nt">/&gt;</span>
+<span class="k">&lt;xsl:stylesheet</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.0&quot;</span>
+<span class="w">    </span><span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="err">&amp;t;</span>
+<span class="err">&lt;xsl:output</span><span class="w"> </span><span class="na">method=</span><span class="s">&quot;xml&quot;</span>
+<span class="w">    </span><span class="na">doctype-public=</span><span class="s">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span>
+<span class="w">    </span><span class="na">doctype-system=</span><span class="s">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;</span>
+<span class="w">    </span><span class="na">cdata-section-elements=</span><span class="s">&quot;javascript-escape&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 
-<span class="k">&lt;xsl:template</span> <span class="na">match=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;head&gt;</span>
-      <span class="nt">&lt;title&gt;</span>The Marriage of XSL and JavaScript<span class="nt">&lt;/title&gt;</span>
-      <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+<span class="k">&lt;xsl:template</span><span class="w"> </span><span class="na">match=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;html</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;head&gt;</span>
+<span class="w">      </span><span class="nt">&lt;title&gt;</span>The<span class="w"> </span>Marriage<span class="w"> </span>of<span class="w"> </span>XSL<span class="w"> </span>and<span class="w"> </span>JavaScript<span class="nt">&lt;/title&gt;</span>
+<span class="w">      </span><span class="nt">&lt;script</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
 
-      /*
-        <span class="nt">&lt;javascript-escape&gt;</span>
-          <span class="cp">&lt;![CDATA[</span>
+<span class="w">      </span>/*
+<span class="w">        </span><span class="nt">&lt;javascript-escape&gt;</span>
+<span class="w">          </span><span class="cp">&lt;![CDATA[</span>
 <span class="cp">      */</span>
 
 <span class="cp">function load() {</span>
@@ -60,14 +60,14 @@
 <span class="cp">}</span>
 
 <span class="cp">      /* ]]&gt;</span>
-        <span class="nt">&lt;/javascript-escape&gt;</span>
-      */
-      <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;/head&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/javascript-escape&gt;</span>
+<span class="w">      </span>*/
+<span class="w">      </span><span class="nt">&lt;/script&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/head&gt;</span>
 
-  <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&quot;load()&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Captain: You know what you doing.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
+<span class="w">  </span><span class="nt">&lt;body</span><span class="w"> </span><span class="na">onload=</span><span class="s">&quot;load()&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;p&gt;</span>Captain:<span class="w"> </span>You<span class="w"> </span>know<span class="w"> </span>what<span class="w"> </span>you<span class="w"> </span>doing.<span class="nt">&lt;/p&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 <span class="k">&lt;/xsl:template&gt;</span>
 <span class="k">&lt;/xsl:stylesheet&gt;</span>

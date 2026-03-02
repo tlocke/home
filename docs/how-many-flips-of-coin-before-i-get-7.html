@@ -62,42 +62,42 @@ HTT  </p>
 <p>Say the nth term of a kth order fibonacci sequence is fib(k, n), then the probability of getting k heads in n flips is:  </p>
 <p>1 - fib(k, n) / 2\^n  </p>
 <p>There's probably some fancy way of working this out, but I wrote a Python 3.6 programme to do it:  </p>
-<div class="highlight"><pre><span></span><code><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="n">NUM_IN_A_ROW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="n">NUM_IN_A_ROW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span>
 
-<span class="k">while</span><span class="w"> </span><span class="n">prob</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.5</span><span class="err">:</span><span class="w"></span>
-<span class="w">    </span><span class="n">first_key</span><span class="p">,</span><span class="w"> </span><span class="n">first_val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted</span><span class="p">(</span><span class="n">stream</span><span class="p">.</span><span class="n">items</span><span class="p">())</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="w"></span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
-<span class="w">        </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key + v + 1</span><span class="o">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">first_val</span><span class="w"></span>
-<span class="w">    </span><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key + 1</span><span class="o">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">first_key</span><span class="w"></span>
-<span class="w">    </span><span class="k">print</span><span class="p">(</span><span class="w"></span>
-<span class="w">        </span><span class="ss">&quot;After &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">first_key</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">&quot; flips the probability of getting &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
-<span class="w">        </span><span class="nf">str</span><span class="p">(</span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">&quot; in a row is &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">prob</span><span class="p">))</span><span class="w"></span>
-<span class="w">    </span><span class="n">del</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key</span><span class="o">]</span><span class="w"></span>
+<span class="k">while</span><span class="w"> </span><span class="n">prob</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.5</span><span class="err">:</span>
+<span class="w">    </span><span class="n">first_key</span><span class="p">,</span><span class="w"> </span><span class="n">first_val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted</span><span class="p">(</span><span class="n">stream</span><span class="p">.</span><span class="n">items</span><span class="p">())</span><span class="o">[</span><span class="n">0</span><span class="o">]</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span><span class="err">:</span>
+<span class="w">        </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key + v + 1</span><span class="o">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">first_val</span>
+<span class="w">    </span><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key + 1</span><span class="o">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">first_key</span>
+<span class="w">    </span><span class="k">print</span><span class="p">(</span>
+<span class="w">        </span><span class="ss">&quot;After &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">first_key</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">&quot; flips the probability of getting &quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">        </span><span class="nf">str</span><span class="p">(</span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">&quot; in a row is &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">prob</span><span class="p">))</span>
+<span class="w">    </span><span class="n">del</span><span class="w"> </span><span class="n">stream</span><span class="o">[</span><span class="n">first_key</span><span class="o">]</span>
 </code></pre></div>
 
 <p>Running this gives: <code>After 178 flips the probability of getting 7 in a row is 0.5014494277755364</code>. So my answer is 178!  </p>
 <p>Any corrections and comments welcome :-)  </p>
 <h4>Update 2018-04-08</h4>
 <p>Having thought about the maths again, I think the Python can be written in a better way, and the <a href="https://docs.python.org/3/library/collections.html#collections.deque">deque</a> data structure is well suited to finding n-order fibonacci sequences. So here's my second attempt, and reassuringly it comes out with the same answer.  </p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
-<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">count</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="n">deque</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="n">count</span>
 
 
-<span class="n">NUM_IN_A_ROW</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="n">fibs</span> <span class="o">=</span> <span class="n">deque</span><span class="p">([</span><span class="mi">1</span><span class="p">],</span> <span class="n">NUM_IN_A_ROW</span><span class="p">)</span>
-<span class="n">tot</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">NUM_IN_A_ROW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span>
+<span class="n">fibs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deque</span><span class="p">([</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">NUM_IN_A_ROW</span><span class="p">)</span>
+<span class="n">tot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
 
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">count</span><span class="p">():</span>
-    <span class="n">fib</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">fibs</span><span class="p">)</span>
-    <span class="n">fibs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span>
-    <span class="n">prob</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">fib</span> <span class="o">/</span> <span class="n">tot</span>
-    <span class="nb">print</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">&quot;After </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> flips the probability of getting </span><span class="si">{</span><span class="n">NUM_IN_A_ROW</span><span class="si">}</span><span class="s2"> in a row &quot;</span>
-        <span class="sa">f</span><span class="s2">&quot;is </span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">prob</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
-        <span class="k">break</span>
-    <span class="n">tot</span> <span class="o">*=</span> <span class="mi">2</span>
+<span class="k">for</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">count</span><span class="p">():</span>
+<span class="w">    </span><span class="n">fib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">sum</span><span class="p">(</span><span class="n">fibs</span><span class="p">)</span>
+<span class="w">    </span><span class="n">fibs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span>
+<span class="w">    </span><span class="n">prob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">fib</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">tot</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span>
+<span class="w">        </span><span class="sa">f</span><span class="s2">&quot;After </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> flips the probability of getting </span><span class="si">{</span><span class="n">NUM_IN_A_ROW</span><span class="si">}</span><span class="s2"> in a row &quot;</span>
+<span class="w">        </span><span class="sa">f</span><span class="s2">&quot;is </span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">prob</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">0.5</span><span class="p">:</span>
+<span class="w">        </span><span class="k">break</span>
+<span class="w">    </span><span class="n">tot</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span>
 </code></pre></div>
     <footer class="post-info">
     </footer><!-- /.post-info -->
