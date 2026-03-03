@@ -109,3 +109,11 @@ blockquote {
   border-left: 0.5em solid #ccc;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 0.4em 0.8em;
+}

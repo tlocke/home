@@ -46,3 +46,6 @@ EXTRA_PATH_METADATA = {
 }
 
 READERS = {"html": None}
+
+ARTICLE_URL = "{date:%Y}/{slug}.html"
+ARTICLE_SAVE_AS = "{date:%Y}/{slug}.html"
