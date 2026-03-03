@@ -1,7 +1,0 @@
-[user]
-	name = Tony Locke
-	email = tlocke@tlocke.org.uk
-[push]
-	default = simple
-[alias]
-	hist = log --graph --decorate
