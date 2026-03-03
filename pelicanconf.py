@@ -34,7 +34,6 @@ MENUITEMS = (
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-OUTPUT_PATH = "docs"
 # THEME = "/home/tlocke/home/themes/notmyidea"
 THEME = "themes/simple"
 YEAR_ARCHIVE_SAVE_AS = "posts/{date:%Y}/index.html"

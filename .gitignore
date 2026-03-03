@@ -16,6 +16,7 @@ examples.desktop
 maths
 .gnupg
 home
+output/
 .sudo_as_admin_successful
 test/
 sqlalchemy/

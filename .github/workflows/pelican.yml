@@ -1,0 +1,17 @@
+name: Deploy Pelican site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: "seanh/ghp-pelican/.github/workflows/github_pages.yml@main"
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    with:
+      settings: "publishconf.py"
+      requirements: "pelican[markdown]"
