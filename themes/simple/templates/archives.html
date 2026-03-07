@@ -4,9 +4,10 @@
 
 {% block content %}
 
+  {% set years = articles | map(attribute='date.year') | unique | sort | reverse %}
   <ul>
-    {% for year in range(dates[0].date.year, dates[-1].date.year -1, -1) %}
-      <li><a href="{{ SITEURL }}/posts/{{year}}/">{{ year }}</a></li>
+    {% for year in years %}
+      <li><a href="{{ SITEURL }}/posts/{{ year }}/">{{ year }}</a></li>
     {% endfor %}
   </ul>
 
